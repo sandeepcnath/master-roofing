@@ -1,0 +1,78 @@
+{
+  "Main": {
+    "main_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Main title"
+      }
+    },
+    "main_subtitle": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, list-item",
+        "label": "Main subtitle"
+      }
+    },
+    "primary_cta": {
+      "type": "Link",
+      "config": {
+        "label": "Primary CTA",
+        "placeholder": "the main link"
+      }
+    },
+    "secondary_cta": {
+      "type": "Link",
+      "config": {
+        "label": "Secondary CTA",
+        "placeholder": "second link"
+      }
+    },
+    "whatsapp": {
+      "type": "Link",
+      "config": {
+        "label": "WhatsApp"
+      }
+    }
+  },
+  "Motto": {
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Title",
+        "placeholder": "Motto title"
+      }
+    },
+    "text": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, list-item",
+        "label": "text",
+        "placeholder": "Motto text"
+      }
+    },
+    "owner_name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading5",
+        "label": "Owner name"
+      }
+    },
+    "owner_subtitle": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Owner subtitle"
+      }
+    },
+    "owner_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Owner image"
+      }
+    }
+  }
+}

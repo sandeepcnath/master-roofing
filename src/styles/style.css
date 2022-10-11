@@ -1,0 +1,22 @@
+@import "./variables.css";
+@import "./atoms.css";
+@import "./external.css";
+
+.hidden {
+  display: none !important;
+}
+
+/* HTML elements */
+
+.button_transparent {
+  background-color: transparent;
+  border: transparent;
+}
+
+/* Custom classes */
+
+.global-wrapper {
+  margin-inline: auto;
+  max-width: var(--maxWidth-wrapper);
+  padding: calc(5 * var(--flexible-base2)) calc(2 * var(--flexible-base2));
+}

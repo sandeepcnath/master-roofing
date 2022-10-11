@@ -1,0 +1,28 @@
+/* all the styles for external components go here */
+
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+
+/* swiper */
+
+.swiper-slide {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.swiper-pagination-bullets {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.swiper-pagination-bullet {
+}
+
+.swiper-pagination-bullet-active {
+}
+
+.swiper-pagination-bullet-active-main {
+  /* background-color: #fff; */
+}
