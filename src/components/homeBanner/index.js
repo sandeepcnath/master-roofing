@@ -6,35 +6,35 @@ import "./index.css"
 import WhatsAppLogo from "../../images/icons/whatsapp.svg"
 
 const HomeBanner = ({ data }) => {
-  const image = getImage(
-    data.prismicHomepage.dataRaw.banner_background_image.url
-  )
+  // const image = getImage(
+  //   data.prismicHomepage.data.banner_background_image.url
+  // )
   return (
     <section className="banner">
-      <PrismicRichText field={data.prismicHomepage.dataRaw.main_title} />
+      <PrismicRichText field={data.prismicHomepage.data.main_title.richText} />
       <p className="text-container banner__text">
-        {data.prismicHomepage.dataRaw.main_subtitle[0].text}
+        {data.prismicHomepage.data.main_subtitle.text}
       </p>
-      {console.log(data.prismicHomepage.dataRaw.banner_background_image.url)}
       <img
         className="banner__background"
-        src={data.prismicHomepage.dataRaw.banner_background_image.url}
+        src={data.prismicHomepage.data.banner_background_image.fluid.src}
+        srcSet={data.prismicHomepage.data.banner_background_image.fluid.srcSet}
       />
       <div className="button-wrap">
         <a
-          href={data.prismicHomepage.dataRaw.primary_cta.url}
+          href={data.prismicHomepage.data.primary_cta.url}
           className="button button_primary"
         >
-          {data.prismicHomepage.dataRaw.primary_cta_text[0].text}
+          {data.prismicHomepage.data.primary_cta_text.text}
         </a>
         <a
-          href={data.prismicHomepage.dataRaw.secondary_cta.url}
+          href={data.prismicHomepage.data.secondary_cta.url}
           className="button button_primary button_secondary"
         >
-          {data.prismicHomepage.dataRaw.secondary_cta_text[0].text}
+          {data.prismicHomepage.data.secondary_cta_text.text}
         </a>
         <a
-          href={data.prismicHomepage.dataRaw.whatsapp.url}
+          href={data.prismicHomepage.data.whatsapp.url}
           className="button button_icon"
           title="click here to chat with us in WhatsApp"
         >

@@ -55,7 +55,6 @@ export const pageQuery = graphql`
       }
     }
     prismicHomepage(
-      dataRaw: {}
       data: {
         main_subtitle: { richText: {} }
         main_title: {}
@@ -64,11 +63,61 @@ export const pageQuery = graphql`
         primary_cta: {}
         secondary_cta: {}
         owner_image: {}
-        banner_background_image: {}
+        banner_background_image: {
+          url: {}
+          gatsbyImageData: {}
+          fluid: { srcSet: {} }
+        }
       }
     ) {
       id
-      dataRaw
+      data {
+        banner_background_image {
+          fluid {
+            srcSet
+            src
+          }
+        }
+        main_subtitle {
+          text
+        }
+        main_title {
+          richText
+        }
+        motto_text {
+          text
+        }
+        motto_title {
+          text
+        }
+        owner_image {
+          fluid {
+            srcSet
+            src
+          }
+        }
+        owner_name {
+          text
+        }
+        owner_subtitle {
+          text
+        }
+        primary_cta {
+          url
+        }
+        primary_cta_text {
+          text
+        }
+        secondary_cta {
+          url
+        }
+        secondary_cta_text {
+          text
+        }
+        whatsapp {
+          url
+        }
+      }
     }
   }
 `
