@@ -8,7 +8,6 @@
 
 html {
   line-height: var(--lineHeight-relaxed);
-  font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -18,6 +17,15 @@ body {
   font-size: var(--fontSize-1);
   color: var(--color-text);
   background: var(--color-white);
+}
+
+main {
+  max-width: var(--maxWidth-wrapper);
+  margin: 0 auto;
+}
+
+main > section {
+  padding: 0 calc(2 * var(--flexible-base2));
 }
 
 ::selection {
@@ -57,6 +65,10 @@ h6 {
   color: var(--color-heading);
 }
 
+.h1_lg {
+  font-size: var(--fontSize-7);
+}
+
 h1 {
   font-size: var(--fontSize-6);
 }
@@ -81,8 +93,6 @@ h6 {
   font-size: var(--fontSize-1);
 }
 
-/* Prose */
-
 p {
   line-height: var(--lineHeight-relaxed);
   --baseline-multiplier: 0.179;
@@ -92,6 +102,10 @@ p {
 
 p:last-child {
   margin-bottom: 0;
+}
+
+.p_lg {
+  font-size: var(--fontSize-2);
 }
 
 ul,
@@ -117,6 +131,7 @@ table thead tr th {
 
 a {
   color: var(--color-link);
+  text-decoration: none;
 }
 
 a:hover,
@@ -124,6 +139,76 @@ a:focus {
   text-decoration: none;
 }
 
-button {
+button,
+.button {
+  background: transparent;
+  padding: 0.4em 1em;
+  border: none;
+  border-radius: 0.4em;
   cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  outline: none;
+}
+
+button:focus,
+.button:focus {
+  outline: none;
+}
+
+.button_icon {
+  padding: 0;
+}
+
+.button {
+  color: var(--color-white);
+  background: var(--color-primary);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-light) 10%,
+    var(--color-primary) 80%
+  );
+  border: none;
+  border-radius: 0.4em;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.button:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--color-primary);
+  border-radius: 0.4em;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.button:hover:after,
+.button:focus:after {
+  left: 0;
+  width: 100%;
+  opacity: 1;
+}
+
+.button:active {
+  top: 2px;
+}
+
+.button_secondary {
+  background: var(--color-primary);
+  background: linear-gradient(
+    135deg,
+    var(--color-secondary-light) 0%,
+    var(--color-secondary) 80%
+  );
+}
+
+.button_secondary::after {
+  background-color: var(--color-secondary);
 }

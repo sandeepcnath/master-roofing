@@ -6,6 +6,10 @@
   display: none !important;
 }
 
+.text-container {
+  max-width: 45rem;
+}
+
 /* HTML elements */
 
 .button_transparent {
@@ -14,9 +18,8 @@
 }
 
 /* Custom classes */
-
-.global-wrapper {
-  margin-inline: auto;
-  max-width: var(--maxWidth-wrapper);
-  padding: calc(5 * var(--flexible-base2)) calc(2 * var(--flexible-base2));
+.button-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
 }

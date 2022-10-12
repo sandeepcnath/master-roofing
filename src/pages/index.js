@@ -3,8 +3,7 @@ import { Link, graphql } from "gatsby"
 import { PrismicLink, PrismicText, PrismicRichText } from "@prismicio/react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import CardList from "../components/cardList"
-import Modal from "../components/modal"
+import HomeBanner from "../components/homeBanner"
 
 import postImage from "../images/post.jpg"
 const BlogIndex = ({ data, location }) => {
@@ -29,11 +28,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title="w3opines">
       <Seo title="w3opines" />
-      <PrismicRichText field={data.prismicHomepage.dataRaw.main_title} />
-      <PrismicRichText
-        className="subtitle"
-        field={data.prismicHomepage.dataRaw.main_subtitle}
-      />
+      <HomeBanner data={data} />
       {/* <CardList
         items={posts}
         onCardClick={value => {
@@ -64,11 +59,12 @@ export const pageQuery = graphql`
       data: {
         main_subtitle: { richText: {} }
         main_title: {}
-        owner_image: {}
         owner_name: {}
         owner_subtitle: {}
         primary_cta: {}
         secondary_cta: {}
+        owner_image: {}
+        banner_background_image: {}
       }
     ) {
       id
