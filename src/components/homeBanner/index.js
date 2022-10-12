@@ -23,18 +23,18 @@ const HomeBanner = ({ data }) => {
       <div className="button-wrap">
         <a
           href={data.prismicHomepage.dataRaw.primary_cta.url}
-          className="button"
+          className="button button_primary"
         >
           {data.prismicHomepage.dataRaw.primary_cta_text[0].text}
         </a>
         <a
           href={data.prismicHomepage.dataRaw.secondary_cta.url}
-          className="button button_secondary"
+          className="button button_primary button_secondary"
         >
           {data.prismicHomepage.dataRaw.secondary_cta_text[0].text}
         </a>
         <a
-          href={data.prismicHomepage.dataRaw.secondary_cta_text.url}
+          href={data.prismicHomepage.dataRaw.whatsapp.url}
           className="button button_icon"
           title="click here to chat with us in WhatsApp"
         >

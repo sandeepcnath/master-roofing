@@ -160,7 +160,13 @@ button:focus,
   padding: 0;
 }
 
-.button {
+.button_icon:hover,
+.button_icon:active,
+.button_icon:focus {
+  filter: brightness(1.1);
+}
+
+.button_primary {
   color: var(--color-white);
   background: var(--color-primary);
   background: linear-gradient(
@@ -175,7 +181,7 @@ button:focus,
   transition: all 0.3s ease;
 }
 
-.button:after {
+.button_primary:after {
   position: absolute;
   content: "";
   width: 0;
@@ -189,14 +195,14 @@ button:focus,
   transition: all 0.3s ease;
 }
 
-.button:hover:after,
-.button:focus:after {
+.button_primary:hover:after,
+.button_primary:focus:after {
   left: 0;
   width: 100%;
   opacity: 1;
 }
 
-.button:active {
+.button_primary:active {
   top: 2px;
 }
 
