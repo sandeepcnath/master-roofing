@@ -16,6 +16,7 @@
   color: var(--color-white);
   font-size: var(--fontSize-3);
   text-shadow: 2px 2px 0.2em #000a;
+  max-width: 45rem;
 }
 
 .banner__background {

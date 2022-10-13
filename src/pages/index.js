@@ -4,6 +4,7 @@ import { PrismicLink, PrismicText, PrismicRichText } from "@prismicio/react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HomeBanner from "../components/homeBanner"
+import Motto from "../components/Motto"
 
 import postImage from "../images/post.jpg"
 const BlogIndex = ({ data, location }) => {
@@ -29,6 +30,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title="w3opines">
       <Seo title="w3opines" />
       <HomeBanner data={data} />
+      <Motto data={data} />
       {/* <CardList
         items={posts}
         onCardClick={value => {
@@ -54,22 +56,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    prismicHomepage(
-      data: {
-        main_subtitle: { richText: {} }
-        main_title: {}
-        owner_name: {}
-        owner_subtitle: {}
-        primary_cta: {}
-        secondary_cta: {}
-        owner_image: {}
-        banner_background_image: {
-          url: {}
-          gatsbyImageData: {}
-          fluid: { srcSet: {} }
-        }
-      }
-    ) {
+    prismicHomepage {
       id
       data {
         banner_background_image {
@@ -116,6 +103,33 @@ export const pageQuery = graphql`
         }
         whatsapp {
           url
+        }
+        why_title {
+          text
+        }
+        body {
+          ... on PrismicSliceType {
+            id
+            slice_label
+            slice_type
+          }
+          ... on PrismicHomepageDataBodyReasons {
+            id
+            primary {
+              link {
+                url
+              }
+              link_title {
+                text
+              }
+              text {
+                richText
+              }
+              title {
+                text
+              }
+            }
+          }
         }
       }
     }

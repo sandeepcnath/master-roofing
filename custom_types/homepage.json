@@ -101,5 +101,69 @@
         "label": "Owner image"
       }
     }
+  },
+  "whyus": {
+    "why_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Why title",
+        "placeholder": "a title asking why should customers choose us"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "reasons": [
+            {
+              "display": "whyReasonsList",
+              "name": "whyreasonslist"
+            }
+          ]
+        },
+        "choices": {
+          "reasons": {
+            "type": "Slice",
+            "fieldset": "Reasons",
+            "description": "for lists with title and text",
+            "icon": "autorenew",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "title"
+                }
+              },
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em",
+                  "label": "text"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "link"
+                }
+              },
+              "link_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading6",
+                  "label": "link title",
+                  "placeholder": "choose only if there's a link"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
   }
 }

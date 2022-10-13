@@ -1,7 +1,7 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { PrismicLink, PrismicText, PrismicRichText } from "@prismicio/react"
+import { PrismicRichText } from "@prismicio/react"
 import "./index.css"
 import WhatsAppLogo from "../../images/icons/whatsapp.svg"
 
@@ -12,7 +12,7 @@ const HomeBanner = ({ data }) => {
   return (
     <section className="banner">
       <PrismicRichText field={data.prismicHomepage.data.main_title.richText} />
-      <p className="text-container banner__text">
+      <p className="banner__text">
         {data.prismicHomepage.data.main_subtitle.text}
       </p>
       <img
@@ -21,18 +21,18 @@ const HomeBanner = ({ data }) => {
         srcSet={data.prismicHomepage.data.banner_background_image.fluid.srcSet}
       />
       <div className="button-wrap">
-        <a
-          href={data.prismicHomepage.data.primary_cta.url}
+        <Link
+          to={data.prismicHomepage.data.primary_cta.url}
           className="button button_primary"
         >
           {data.prismicHomepage.data.primary_cta_text.text}
-        </a>
-        <a
-          href={data.prismicHomepage.data.secondary_cta.url}
+        </Link>
+        <Link
+          to={data.prismicHomepage.data.secondary_cta.url}
           className="button button_primary button_secondary"
         >
           {data.prismicHomepage.data.secondary_cta_text.text}
-        </a>
+        </Link>
         <a
           href={data.prismicHomepage.data.whatsapp.url}
           className="button button_icon"
