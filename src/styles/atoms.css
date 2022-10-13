@@ -152,7 +152,7 @@ button,
   border: none;
   border-radius: 0.4em;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   overflow: hidden;
   outline: none;
 }

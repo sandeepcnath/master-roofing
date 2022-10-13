@@ -6,6 +6,10 @@
   display: none !important;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
 .text-container {
   max-width: 45rem;
   margin-inline: auto;
@@ -23,4 +27,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: calc(4 * var(--flexible-base2));
 }

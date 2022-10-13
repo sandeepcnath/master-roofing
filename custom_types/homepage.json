@@ -131,6 +131,14 @@
             "icon": "autorenew",
             "display": "list",
             "non-repeat": {
+              "icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "icon"
+                }
+              },
               "title": {
                 "type": "StructuredText",
                 "config": {

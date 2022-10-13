@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HomeBanner from "../components/homeBanner"
 import Motto from "../components/Motto"
+import WhyUs from "../components/WhyUs"
 
 import postImage from "../images/post.jpg"
 const BlogIndex = ({ data, location }) => {
@@ -31,6 +32,7 @@ const BlogIndex = ({ data, location }) => {
       <Seo title="w3opines" />
       <HomeBanner data={data} />
       <Motto data={data} />
+      <WhyUs data={data} />
       {/* <CardList
         items={posts}
         onCardClick={value => {
@@ -127,6 +129,11 @@ export const pageQuery = graphql`
               }
               title {
                 text
+              }
+              icon {
+                fixed {
+                  src
+                }
               }
             }
           }
