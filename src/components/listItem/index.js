@@ -7,10 +7,6 @@ const ListItem = ({ data }) => {
   return (
     <div className="listItem">
       {data.icon.fixed && <img src={data.icon.fixed.src} />}
-      {/* {listType && (
-        <img src={"../../images/icons/" + listType + index + ".svg"} />
-      )} */}
-      {console.log(data)}
       <div className="listItem__text-wrap">
         <h3 className="">{data.title.text}</h3>
         <PrismicRichText field={data.text.richText} />

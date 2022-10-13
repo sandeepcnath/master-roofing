@@ -1,5 +1,9 @@
 .whyUs {
 }
 
-.whyUs__inner {
+.whyUs__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(3 * var(--flexible-base2));
 }

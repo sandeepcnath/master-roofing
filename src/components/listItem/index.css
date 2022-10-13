@@ -1,2 +1,14 @@
 .listItem {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(2 * var(--flexible-base2));
+}
+
+.listItem img {
+  width: calc(5 * var(--flexible-base));
+  margin-top: calc(0.2 * var(--fontSize-4));
+}
+
+.listItem__text-wrap {
+  max-width: 35rem;
 }
