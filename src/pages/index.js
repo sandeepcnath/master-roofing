@@ -1,12 +1,12 @@
 import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
-import { PrismicLink, PrismicText, PrismicRichText } from "@prismicio/react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HomeBanner from "../components/homeBanner"
 import Motto from "../components/Motto"
 import WhyUs from "../components/WhyUs"
 import OurServices from "../components/OurServices"
+import ContactPrompt from "../components/ContactPrompt"
 
 import postImage from "../images/post.jpg"
 const BlogIndex = ({ data, location }) => {
@@ -35,6 +35,7 @@ const BlogIndex = ({ data, location }) => {
       <Motto data={data} />
       <WhyUs data={data} />
       <OurServices data={data} />
+      <ContactPrompt data={data} />
       {/* <CardList
         items={posts}
         onCardClick={value => {
@@ -168,6 +169,10 @@ export const pageQuery = graphql`
         services_title {
           text
         }
+        contactforservice_title {
+          richText
+        }
+        whatsapp1
       }
     }
   }

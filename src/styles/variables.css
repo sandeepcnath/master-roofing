@@ -42,7 +42,7 @@
   --color-white: #fff;
   --color-heading: var(--color-primary);
   --color-link: var(--color-primary);
-  --color-accent: #d1dce5;
+  --color-accent: #e2eeff;
 }
 
 @media (min-width: 768px) {

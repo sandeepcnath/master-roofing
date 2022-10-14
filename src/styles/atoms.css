@@ -49,10 +49,9 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
+  line-height: var(--lineHeight-normal);
   margin-top: 0;
   margin-bottom: 0.5rem;
-  line-height: var(--lineHeight-normal);
-  letter-spacing: -0.025em;
 }
 
 h1,
@@ -163,6 +162,7 @@ button:focus,
 }
 
 .button_icon {
+  width: calc(2.3 * var(--fontSize-1));
   padding: 0;
 }
 
@@ -223,4 +223,13 @@ button:focus,
 
 .button_secondary::after {
   background-color: var(--color-secondary);
+}
+
+.button_white {
+  color: var(--color-primary);
+  background: var(--color-white);
+}
+
+.button_white:after {
+  background-color: var(--color-accent);
 }

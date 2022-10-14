@@ -26,6 +26,8 @@ module.exports = {
         linkResolver: require("./src/utils/linkResolver").linkResolver,
         schemas: {
           homepage: require("./custom_types/homepage.json"),
+          contactinfo: require("./custom_types/contactInfo.json"),
+          contact_info: require("./custom_types/dummy.json"),
         },
       },
     },

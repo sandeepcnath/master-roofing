@@ -241,5 +241,22 @@
         }
       }
     }
+  },
+  "contactForServicePrompt" : {
+    "contactforservice_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "heading3,heading4",
+        "label" : "contactForService Title"
+      }
+    }
+  },
+  "contactInfo" : {
+    "whatsapp1" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "whatsApp"
+      }
+    }
   }
 }

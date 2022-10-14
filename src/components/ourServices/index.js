@@ -11,7 +11,7 @@ const OurServices = ({ data }) => {
     service => service.slice_type == "serviceslist"
   )
   return (
-    <section className="ourServices">
+    <section className="ourServices alt-color">
       <div className="ourServices__inner">
         <h2 className="section-title">
           {data.prismicHomepage.data.services_title.text}

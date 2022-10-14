@@ -3,7 +3,7 @@ import "./index.css"
 
 const Motto = ({ data }) => {
   return (
-    <section className="motto">
+    <section className="motto alt-color">
       <div className="motto__inner">
         <div className="text-container">
           <h2 className="h4">{data.prismicHomepage.data.motto_title.text}</h2>

@@ -2,6 +2,7 @@
   display: flex;
   align-items: flex-start;
   gap: calc(2 * var(--flexible-base2));
+  max-width: 40rem;
 }
 
 .listItem img {
@@ -10,5 +11,4 @@
 }
 
 .listItem__text-wrap {
-  max-width: 35rem;
 }
