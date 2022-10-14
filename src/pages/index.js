@@ -6,6 +6,7 @@ import Seo from "../components/seo"
 import HomeBanner from "../components/homeBanner"
 import Motto from "../components/Motto"
 import WhyUs from "../components/WhyUs"
+import OurServices from "../components/OurServices"
 
 import postImage from "../images/post.jpg"
 const BlogIndex = ({ data, location }) => {
@@ -33,6 +34,7 @@ const BlogIndex = ({ data, location }) => {
       <HomeBanner data={data} />
       <Motto data={data} />
       <WhyUs data={data} />
+      <OurServices data={data} />
       {/* <CardList
         items={posts}
         onCardClick={value => {
@@ -134,9 +136,37 @@ export const pageQuery = graphql`
                 fixed {
                   src
                 }
+                url
               }
             }
           }
+        }
+        body1 {
+          ... on PrismicHomepageDataBody1Serviceslist {
+            id
+            primary {
+              text {
+                richText
+              }
+              icon {
+                url
+              }
+              link_title {
+                text
+              }
+              title {
+                text
+              }
+              link {
+                url
+              }
+            }
+            slice_label
+            slice_type
+          }
+        }
+        services_title {
+          text
         }
       }
     }
