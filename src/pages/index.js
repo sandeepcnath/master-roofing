@@ -30,7 +30,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title="w3opines">
-      <Seo title="w3opines" />
+      <Seo title="Master Roofing" />
       <HomeBanner data={data} />
       <Motto data={data} />
       <WhyUs data={data} />

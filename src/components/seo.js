@@ -40,7 +40,7 @@ const Seo = ({ description, lang, meta, title }) => {
       meta={[
         {
           name: `theme-color`,
-          content: `#0040ff`,
+          content: `#0a0e67`,
         },
         {
           name: `description`,

@@ -7,14 +7,14 @@ const prismicConfig = require("./prismic-configuration")
 
 module.exports = {
   siteMetadata: {
-    title: `w3opines`,
+    title: `Master Roofing`,
     author: {
       name: `abhilash ss & sandeep c nath`,
     },
     // description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://w3opines.com/`,
     social: {
-      twitter: `w3opines`,
+      twitter: `Master Roofing`,
     },
   },
   plugins: [
@@ -85,13 +85,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `w3opines`,
-        short_name: `w3opines`,
+        name: `Master Roofing`,
+        short_name: `Master Roofing`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        theme_color: `#0a0e67`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
