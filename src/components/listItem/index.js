@@ -10,8 +10,8 @@ const ListItem = ({ data }) => {
       <div className="listItem__text-wrap">
         <h3 className="">{data.title.text}</h3>
         <PrismicRichText field={data.text.richText} />
-        {data.link.url && (
-          <Link to={data.link.url} className="button button_primary">
+        {data.link.text && (
+          <Link to={data.link.text} className="button button_primary">
             {data.link_title.text}
           </Link>
         )}

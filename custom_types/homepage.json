@@ -152,10 +152,11 @@
                 }
               },
               "link" : {
-                "type" : "Link",
+                "type" : "StructuredText",
                 "config" : {
+                  "single" : "heading6",
                   "label" : "link",
-                  "select" : null
+                  "placeholder" : "/address"
                 }
               },
               "link_title" : {
@@ -222,10 +223,11 @@
                 }
               },
               "link" : {
-                "type" : "Link",
+                "type" : "StructuredText",
                 "config" : {
+                  "single" : "heading6",
                   "label" : "link",
-                  "select" : null
+                  "placeholder" : "/the address"
                 }
               },
               "link_title" : {

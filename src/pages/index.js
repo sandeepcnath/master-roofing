@@ -29,7 +29,7 @@ const BlogIndex = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title="w3opines">
+    <Layout location={location} title="Master Roofing">
       <Seo title="Master Roofing" />
       <HomeBanner data={data} />
       <Motto data={data} />
@@ -122,7 +122,7 @@ export const pageQuery = graphql`
             id
             primary {
               link {
-                url
+                text
               }
               link_title {
                 text
@@ -143,23 +143,28 @@ export const pageQuery = graphql`
           }
         }
         body1 {
+          ... on PrismicSliceType {
+            id
+            slice_label
+            slice_type
+          }
           ... on PrismicHomepageDataBody1Serviceslist {
             id
             primary {
-              text {
-                richText
-              }
               icon {
                 url
               }
               link_title {
                 text
               }
+              text {
+                richText
+              }
               title {
                 text
               }
               link {
-                url
+                text
               }
             }
             slice_label
