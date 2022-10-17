@@ -5,7 +5,7 @@
   max-width: 40rem;
 }
 
-.listItem img {
+.listItem__img {
   width: calc(5 * var(--flexible-base));
   margin-top: calc(0.2 * var(--fontSize-4));
 }

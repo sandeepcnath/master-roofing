@@ -11,6 +11,7 @@
 
 .contactPrompt h3 {
   color: var(--color-white);
+  text-shadow: var(--text-shadow);
   margin-bottom: 0.5em;
 }
 

@@ -60,6 +60,7 @@
   --color-heading: var(--color-primary);
   --color-link: var(--color-primary);
   --color-accent: #e2eeff;
+  --text-shadow: 2px 2px 0.2em #000a;
 }
 
 @media (min-width: 768px) {

@@ -6,7 +6,7 @@ import "./index.css"
 const ListItem = ({ data }) => {
   return (
     <div className="listItem">
-      {data.icon.url && <img src={data.icon.url} />}
+      {data.icon.url && <img className="listItem__img" src={data.icon.url} />}
       <div className="listItem__text-wrap">
         <h3 className="">{data.title.text}</h3>
         <PrismicRichText field={data.text.richText} />

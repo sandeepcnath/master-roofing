@@ -5,6 +5,7 @@ const Motto = ({ data }) => {
   return (
     <section className="motto alt-color">
       <div className="motto__inner">
+        <div className="motto__spacer"></div>
         <div className="text-container">
           <h2 className="h4">{data.prismicHomepage.data.motto_title.text}</h2>
           <p className="motto__text">
@@ -19,6 +20,7 @@ const Motto = ({ data }) => {
             </p>
           </div>
         </div>
+        <div className="motto__spacer motto__spacer_right"></div>
         <img
           className="motto__image"
           src={data.prismicHomepage.data.owner_image.fluid.src}

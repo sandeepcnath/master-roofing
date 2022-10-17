@@ -6,20 +6,19 @@ import "./index.css"
 import WhatsAppLogo from "../../images/icons/whatsapp.svg"
 
 const HomeBanner = ({ data }) => {
-  // const image = getImage(
-  //   data.prismicHomepage.data.banner_background_image.url
-  // )
+  const backgroundUrl =
+    data.prismicHomepage.data.banner_background_image.fluid.src
   return (
-    <section className="banner">
+    <section
+      className="banner"
+      style={{
+        backgroundImage: `url(${backgroundUrl})`,
+      }}
+    >
       <PrismicRichText field={data.prismicHomepage.data.main_title.richText} />
       <p className="banner__text">
         {data.prismicHomepage.data.main_subtitle.text}
       </p>
-      <img
-        className="banner__background"
-        src={data.prismicHomepage.data.banner_background_image.fluid.src}
-        srcSet={data.prismicHomepage.data.banner_background_image.fluid.srcSet}
-      />
       <div className="button-wrap">
         <Link
           to={data.prismicHomepage.data.primary_cta.url}
