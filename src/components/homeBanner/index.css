@@ -3,8 +3,7 @@
   flex-direction: column;
   justify-content: center;
   min-height: 80vh;
-  background-size: 100vw auto;
-  background-attachment: fixed;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -28,4 +27,10 @@
 
 .banner .button_icon {
   width: calc(2.7 * var(--fontSize-1));
+}
+
+@media (min-width: 768px) {
+  .banner {
+    background-attachment: fixed;
+  }
 }
