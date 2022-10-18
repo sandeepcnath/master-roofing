@@ -71,7 +71,7 @@ export const pageQuery = graphql`
           }
         }
         main_subtitle {
-          text
+          richText
         }
         main_title {
           richText

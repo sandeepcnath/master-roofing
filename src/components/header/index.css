@@ -7,13 +7,13 @@
 }
 
 .nav {
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
 .nav__inner-wrap {
   width: 100%;
-  max-width: 1200px;
-  padding: 1rem;
+  max-width: var(--maxWidth-wrapper);
+  padding: 1rem calc(2 * var(--flexible-base2));
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -23,7 +23,7 @@
 }
 
 .nav .button_menu {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   background-color: var(--color-white);
 }
 
@@ -50,7 +50,7 @@
 .nav__link-a:focus,
 .nav__link-a:hover,
 .nav__link-a:active {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   border-radius: 0;
   box-shadow: inset 0 -2.875em 0 var(--color-white);
 }
@@ -61,7 +61,7 @@
   }
 
   .nav__link-ul {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     height: 1px;
     width: 100vw;
     overflow: hidden;

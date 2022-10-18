@@ -14,7 +14,7 @@
   text-shadow: var(--text-shadow);
 }
 
-.banner__text {
+.banner p {
   color: var(--color-white);
   font-size: var(--fontSize-3);
   text-shadow: var(--text-shadow);

@@ -16,9 +16,9 @@ const HomeBanner = ({ data }) => {
       }}
     >
       <PrismicRichText field={data.prismicHomepage.data.main_title.richText} />
-      <p className="banner__text">
-        {data.prismicHomepage.data.main_subtitle.text}
-      </p>
+      <PrismicRichText
+        field={data.prismicHomepage.data.main_subtitle.richText}
+      />
       <div className="button-wrap">
         <Link
           to={data.prismicHomepage.data.primary_cta.url}
