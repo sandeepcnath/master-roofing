@@ -6,8 +6,8 @@ import "./index.css"
 import WhatsAppLogo from "../../images/icons/whatsapp.svg"
 
 const HomeBanner = ({ data }) => {
-  const backgroundUrl =
-    data.prismicHomepage.data.banner_background_image.fluid.src
+  const homeData = data.prismicHomepage.data
+  const backgroundUrl = homeData.banner_background_image.fluid.src
   return (
     <section
       className="banner"
@@ -15,25 +15,20 @@ const HomeBanner = ({ data }) => {
         backgroundImage: `url(${backgroundUrl})`,
       }}
     >
-      <PrismicRichText field={data.prismicHomepage.data.main_title.richText} />
-      <PrismicRichText
-        field={data.prismicHomepage.data.main_subtitle.richText}
-      />
+      <PrismicRichText field={homeData.main_title.richText} />
+      <PrismicRichText field={homeData.main_subtitle.richText} />
       <div className="button-wrap">
-        <Link
-          to={data.prismicHomepage.data.primary_cta.url}
-          className="button button_primary"
-        >
-          {data.prismicHomepage.data.primary_cta_text.text}
+        <Link to={homeData.primary_cta.url} className="button button_primary">
+          {homeData.primary_cta_text.text}
         </Link>
         <Link
-          to={data.prismicHomepage.data.secondary_cta.url}
+          to={homeData.secondary_cta.url}
           className="button button_primary button_secondary"
         >
-          {data.prismicHomepage.data.secondary_cta_text.text}
+          {homeData.secondary_cta_text.text}
         </Link>
         <a
-          href={data.prismicHomepage.data.whatsapp.url}
+          href={homeData.whatsapp.url}
           className="button button_icon"
           title="click here to chat with us in WhatsApp"
         >
