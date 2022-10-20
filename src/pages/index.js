@@ -178,6 +178,70 @@ export const pageQuery = graphql`
           richText
         }
         whatsapp1
+        projects_subtitle {
+          richText
+        }
+        projects_title {
+          text
+        }
+        body2 {
+          ... on PrismicHomepageDataBody2Projects {
+            id
+            slice_label
+            slice_type
+            items {
+              project_type
+              project_name {
+                text
+              }
+              project_description {
+                richText
+              }
+              project_image_1 {
+                fluid {
+                  srcSet
+                  src
+                }
+              }
+              project_image_2 {
+                fluid {
+                  srcSet
+                  src
+                }
+              }
+              project_image_3 {
+                fluid {
+                  srcSet
+                  src
+                }
+              }
+              project_image_4 {
+                fluid {
+                  srcSet
+                  src
+                }
+              }
+              project_image_5 {
+                fluid {
+                  srcSet
+                  src
+                }
+              }
+              project_image_6 {
+                fluid {
+                  srcSet
+                  src
+                }
+              }
+              project_image_7 {
+                fluid {
+                  srcSet
+                  src
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

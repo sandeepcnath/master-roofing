@@ -3,6 +3,7 @@
   align-items: flex-start;
   gap: calc(2 * var(--flexible-base2));
   max-width: 40rem;
+  margin-inline: auto;
 }
 
 .listItem__img {
@@ -11,4 +12,15 @@
 }
 
 .listItem__text-wrap {
+}
+
+@media (min-width: 55rem) {
+  .listItem {
+    display: block;
+  }
+
+  .listItem__img {
+    width: calc(7 * var(--flexible-base));
+    margin-top: unset;
+  }
 }
