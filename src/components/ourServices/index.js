@@ -10,7 +10,9 @@ const OurServices = ({ data }) => {
   return (
     <section className="ourServices alt-color">
       <div className="ourServices__inner">
-        <h2 className="section-title">{homeData.services_title.text}</h2>
+        <div className="section-title-wrap text-container">
+          <h2 className="section-title">{homeData.services_title.text}</h2>
+        </div>
         <ul className="whyUs__list">
           {serviceslist.map(service => (
             <li>

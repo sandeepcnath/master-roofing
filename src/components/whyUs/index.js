@@ -8,7 +8,9 @@ const WhyUs = ({ data }) => {
   return (
     <section className="whyUs">
       <div className="whyUs__inner">
-        <h2 className="section-title">{homeData.why_title.text}</h2>
+        <div className="section-title-wrap text-container">
+          <h2 className="section-title">{homeData.why_title.text}</h2>
+        </div>
         <ul className="whyUs__list">
           {reasons.map(reason => (
             <li>

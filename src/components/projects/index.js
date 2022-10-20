@@ -1,18 +1,21 @@
 import React from "react"
 import "./index.css"
-import ListItem from "../listItem"
 
-const WhyUs = ({ data }) => {
+const Projects = ({ data }) => {
   const homeData = data.prismicHomepage.data
-  const reasons = homeData.body.filter(reason => reason.slice_type == "reasons")
+  console.log(homeData.body2[0].items)
+  const projects = homeData.body2[0].items
   return (
-    <section className="whyUs">
-      <div className="whyUs__inner">
-        <h2 className="section-title">{homeData.why_title.text}</h2>
-        <ul className="whyUs__list">
-          {reasons.map(reason => (
-            <li>
-              <ListItem data={reason.primary} />
+    <section className="projects">
+      <div className="">
+        <div className="section-title-wrap text-container">
+          <h2 className="section-title">{homeData.projects_title.text}</h2>
+          <p className="section-subtitle">{homeData.projects_subtitle.text}</p>
+        </div>
+        <ul className="projects__list">
+          {projects.map(project => (
+            <li className="projects__list-li">
+              <div className="image-card">{project.project_name.text}</div>
             </li>
           ))}
         </ul>
@@ -21,4 +24,4 @@ const WhyUs = ({ data }) => {
   )
 }
 
-export default WhyUs
+export default Projects

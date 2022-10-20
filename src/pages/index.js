@@ -7,6 +7,7 @@ import Motto from "../components/motto"
 import WhyUs from "../components/whyUs"
 import OurServices from "../components/ourServices"
 import ContactPrompt from "../components/contactPrompt"
+import Projects from "../components/projects"
 
 import postImage from "../images/post.jpg"
 const BlogIndex = ({ data, location }) => {
@@ -36,6 +37,7 @@ const BlogIndex = ({ data, location }) => {
       <WhyUs data={data} />
       <OurServices data={data} />
       <ContactPrompt data={data} />
+      <Projects data={data} />
       {/* <CardList
         items={posts}
         onCardClick={value => {
@@ -179,7 +181,7 @@ export const pageQuery = graphql`
         }
         whatsapp1
         projects_subtitle {
-          richText
+          text
         }
         projects_title {
           text
