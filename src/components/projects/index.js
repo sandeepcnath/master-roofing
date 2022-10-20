@@ -1,4 +1,5 @@
 import React from "react"
+import Card from "../card"
 import "./index.css"
 
 const Projects = ({ data }) => {
@@ -15,7 +16,7 @@ const Projects = ({ data }) => {
         <ul className="projects__list">
           {projects.map(project => (
             <li className="projects__list-li">
-              <div className="image-card">{project.project_name.text}</div>
+              <Card data={project} />
             </li>
           ))}
         </ul>

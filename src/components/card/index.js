@@ -1,165 +1,93 @@
 import * as React from "react"
-import "./index.css"
+import { PrismicRichText } from "@prismicio/react"
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination } from "swiper"
+import { Lazy, Pagination, Navigation } from "swiper"
+import "./index.css"
 
 import { StaticImage } from "gatsby-plugin-image"
 
-const Card = ({ id, title, imageSrc, onClick }) => {
+const Card = data => {
+  const cardData = data.data
+  console.log("sss", cardData.project_image_1.fluid.src)
   return (
-    <a className="card" tabIndex="0" title={title} onClick={() => onClick(id)}>
+    <div className="card">
       <Swiper
+        style={{
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
+          "--swiper-navigation-size": "36px",
+        }}
         pagination={{
           dynamicBullets: true,
+          clickable: true,
         }}
         navigation={true}
-        modules={[Pagination]}
+        modules={[Lazy, Pagination, Navigation]}
         loop={true}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={swiper => console.log(swiper)}
+        lazy={true}
       >
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage
-            className="card__image"
-            layout="constrained"
-            formats={["auto", "webp"]}
-            src="../../images/post.jpg"
-            quality={100}
-            alt="CSS4 wont be coming"
-          />
-        </SwiperSlide>
+        {cardData.project_image_1.fluid && (
+          <SwiperSlide>
+            <img
+              className="card__image"
+              src={cardData.project_image_1.fluid.src}
+              alt=""
+            />
+          </SwiperSlide>
+        )}
+        {cardData.project_image_2.fluid && (
+          <SwiperSlide>
+            <img
+              className="card__image"
+              src={cardData.project_image_2.fluid.src}
+              alt=""
+            />
+          </SwiperSlide>
+        )}
+        {cardData.project_image_3.fluid && (
+          <SwiperSlide>
+            <img
+              className="card__image"
+              src={cardData.project_image_3.fluid.src}
+              alt=""
+            />
+          </SwiperSlide>
+        )}
+        {cardData.project_image_4.fluid && (
+          <SwiperSlide>
+            <img
+              className="card__image"
+              src={cardData.project_image_4.fluid.src}
+              alt=""
+            />
+          </SwiperSlide>
+        )}
+        {cardData.project_image_5.fluid && (
+          <SwiperSlide>
+            <img
+              className="card__image"
+              src={cardData.project_image_5.fluid.src}
+              alt=""
+            />
+          </SwiperSlide>
+        )}
+        {cardData.project_image_6.fluid && (
+          <SwiperSlide>
+            <img src={cardData.project_image_6.fluid.src} alt="" />
+          </SwiperSlide>
+        )}
+        {cardData.project_image_7.fluid && (
+          <SwiperSlide>
+            <img src={cardData.project_image_7.fluid.src} alt="" />
+          </SwiperSlide>
+        )}
       </Swiper>
-    </a>
+      <div className="card__text-wrap">
+        <span className="hidden">{cardData.project_type}</span>
+        <h3 className="h6 card__title">{cardData.project_name.text}</h3>
+        <PrismicRichText field={cardData.project_description.richText} />
+      </div>
+    </div>
   )
 }
 

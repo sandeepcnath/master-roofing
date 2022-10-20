@@ -1,0 +1,6 @@
+.projects__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: calc(4 * var(--flexible-base2));
+  justify-content: center;
+}

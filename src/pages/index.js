@@ -201,43 +201,36 @@ export const pageQuery = graphql`
               }
               project_image_1 {
                 fluid {
-                  srcSet
                   src
                 }
               }
               project_image_2 {
                 fluid {
-                  srcSet
                   src
                 }
               }
               project_image_3 {
                 fluid {
-                  srcSet
                   src
                 }
               }
               project_image_4 {
                 fluid {
-                  srcSet
                   src
                 }
               }
               project_image_5 {
                 fluid {
-                  srcSet
                   src
                 }
               }
               project_image_6 {
                 fluid {
-                  srcSet
                   src
                 }
               }
               project_image_7 {
                 fluid {
-                  srcSet
                   src
                 }
               }

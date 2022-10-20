@@ -1,12 +1,13 @@
 /* all the styles for external components go here */
 
 @import "swiper/css";
+@import "swiper/css/lazy";
 @import "swiper/css/pagination";
 @import "swiper/css/navigation";
 
 /* swiper */
 
-.swiper-slide {
+/* .swiper-slide {
   max-width: 100% !important;
   width: 100% !important;
 }
@@ -24,5 +25,5 @@
 }
 
 .swiper-pagination-bullet-active-main {
-  /* background-color: #fff; */
-}
+  background-color: #fff;
+} */
