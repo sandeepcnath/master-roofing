@@ -1,0 +1,33 @@
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 2px 1px 12px 4px #aaac;
+  overflow: hidden;
+}
+
+.card .swiper-slide {
+  display: flex;
+  position: relative;
+  padding-top: 66.66%;
+}
+
+.card__image {
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.card__text-wrap {
+  padding: 1rem;
+}
+
+.card__title {
+  margin-bottom: 0.25rem;
+}
+
+.card p {
+  font-size: var(--fontSize-0);
+  line-height: 1.3;
+}

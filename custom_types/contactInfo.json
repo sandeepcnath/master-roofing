@@ -1,0 +1,16 @@
+{
+  "Main": {
+    "whatsapp_number": {
+      "type": "Number",
+      "config": {
+        "label": "whatsapp number"
+      }
+    },
+    "contact_number_1": {
+      "type": "Number",
+      "config": {
+        "label": "contact number 1"
+      }
+    }
+  }
+}

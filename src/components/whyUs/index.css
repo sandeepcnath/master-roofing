@@ -1,0 +1,12 @@
+.whyUs__list {
+  display: grid;
+  align-items: start;
+  gap: calc(4 * var(--flexible-base2));
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .whyUs__list {
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  }
+}

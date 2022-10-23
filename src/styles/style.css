@@ -1,0 +1,44 @@
+@import "./variables.css";
+@import "./atoms.css";
+@import "./external.css";
+
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-container {
+  max-width: 45rem;
+  margin-inline: auto;
+}
+
+/* HTML elements */
+
+.button_transparent {
+  background-color: transparent;
+  border: transparent;
+}
+
+/* Custom classes */
+.button-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.section-title-wrap {
+  text-align: center;
+  margin-bottom: calc(4 * var(--flexible-base2));
+}
+
+.section-subtitle {
+  font-size: var(--fontSize-2);
+}
+
+.alt-color {
+  background-color: var(--color-accent);
+}

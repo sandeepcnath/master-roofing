@@ -1,0 +1,26 @@
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(2 * var(--flexible-base2));
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.listItem__img {
+  width: calc(5 * var(--flexible-base));
+  margin-top: calc(0.2 * var(--fontSize-4));
+}
+
+.listItem__text-wrap {
+}
+
+@media (min-width: 55rem) {
+  .listItem {
+    display: block;
+  }
+
+  .listItem__img {
+    width: calc(7 * var(--flexible-base));
+    margin-top: unset;
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "homePage",
+    "name": "homePage",
+    "repeatable": false,
+    "value": "homepage.json"
+  },
+  {
+    "id": "contactInfo",
+    "name": "contactInfo",
+    "repeatable": false,
+    "value": "contactInfo.json"
+  },
+  {
+    "id": "contact_info",
+    "name": "contact_info",
+    "repeatable": false,
+    "value": "contactInfo.json"
+  }
+]

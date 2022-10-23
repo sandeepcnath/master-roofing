@@ -1,0 +1,21 @@
+.contactPrompt {
+  background: var(--color-primary);
+  background: url("../../images/metal-sheet.jpg") center/6rem 100%;
+  padding: calc(4 * var(--flexible-base2)) calc(2 * var(--flexible-base2));
+}
+
+.contactPrompt__inner {
+  max-width: 40rem;
+  margin: auto;
+}
+
+.contactPrompt h3 {
+  color: var(--color-white);
+  text-shadow: var(--text-shadow);
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 45rem) {
+  .contactPrompt {
+  }
+}

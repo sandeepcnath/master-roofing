@@ -1,0 +1,47 @@
+.motto {
+  padding-bottom: 0;
+  position: relative;
+}
+
+.motto__image {
+  max-width: 13rem;
+  height: auto;
+  margin-top: calc(3 * var(--flexible-base2));
+  display: flex;
+}
+
+@media (min-width: 45rem) {
+  .motto {
+    padding-bottom: calc(8 * var(--flexible-base2));
+  }
+
+  .motto__inner {
+    display: flex;
+    margin: auto;
+  }
+
+  .motto__spacer {
+    flex: 0 0 17rem;
+  }
+
+  .motto__spacer_right {
+    flex: 0 1 auto;
+  }
+
+  .motto .text-container {
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  .motto__owner-name {
+    margin-bottom: 0;
+  }
+
+  .motto__image {
+    margin-top: unset;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 20rem;
+  }
+}
