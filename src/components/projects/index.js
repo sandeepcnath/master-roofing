@@ -1,11 +1,22 @@
-import React from "react"
+import React, { useState } from "react"
 import Card from "../card"
 import "./index.css"
 
 const Projects = ({ data }) => {
+  const [viewAll, setViewAll] = useState(false)
+  const showAll = () => {
+    setViewAll(!viewAll)
+    console.log("clicked", viewAll)
+  }
+
   const homeData = data.prismicHomepage.data
   console.log(homeData.body2[0].items)
-  const projects = homeData.body2[0].items
+  if (viewAll) {
+    var projects = homeData.body2[0].items
+  } else {
+    var projects = homeData.body2[0].items.slice(0, 3)
+  }
+
   return (
     <section className="projects">
       <div className="">
@@ -15,11 +26,16 @@ const Projects = ({ data }) => {
         </div>
         <ul className="projects__list">
           {projects.map(project => (
-            <li className="projects__list-li">
+            <li className="projects__list-li" key={project.project_name.text}>
               <Card data={project} />
             </li>
           ))}
         </ul>
+        <div className="button-wrap button-wrap_footer">
+          <button className="button button_primary" onClick={showAll}>
+            {viewAll ? "Minimize" : "View all projects"}
+          </button>
+        </div>
       </div>
     </section>
   )

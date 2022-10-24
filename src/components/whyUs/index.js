@@ -13,7 +13,7 @@ const WhyUs = ({ data }) => {
         </div>
         <ul className="whyUs__list">
           {reasons.map(reason => (
-            <li>
+            <li key={reason.primary.title.text}>
               <ListItem data={reason.primary} />
             </li>
           ))}

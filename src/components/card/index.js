@@ -8,7 +8,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Card = data => {
   const cardData = data.data
-  console.log("sss", cardData.project_image_1.fluid.src)
   return (
     <div className="card">
       <Swiper

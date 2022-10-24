@@ -15,7 +15,7 @@ const OurServices = ({ data }) => {
         </div>
         <ul className="whyUs__list">
           {serviceslist.map(service => (
-            <li>
+            <li key={service.primary.title.text}>
               <ListItem data={service.primary} />
             </li>
           ))}
