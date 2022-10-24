@@ -263,6 +263,14 @@
       "config": {
         "label": "whatsApp"
       }
+    },
+    "qr_code": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "QR code"
+      }
     }
   },
   "projects": {

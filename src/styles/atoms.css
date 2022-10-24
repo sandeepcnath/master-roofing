@@ -119,6 +119,10 @@ p:last-child {
   font-size: var(--fontSize-2);
 }
 
+.small {
+  font-size: var(--fontSize-0);
+}
+
 ul,
 ol,
 li {

@@ -1,6 +1,7 @@
 import * as React from "react"
 // import Header from "./header1/index"
 import Header from "./header/index"
+import Footer from "./footer/index"
 
 const Layout = ({ location, title, mainClass, children }) => {
   return (
@@ -8,11 +9,7 @@ const Layout = ({ location, title, mainClass, children }) => {
       <Header />
       {/* <Header location={location} title={title} /> */}
       <main className={mainClass && mainClass}>{children}</main>
-      <footer className="hidden">
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      <Footer />
     </>
   )
 }

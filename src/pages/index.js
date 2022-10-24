@@ -180,6 +180,11 @@ export const pageQuery = graphql`
           richText
         }
         whatsapp1
+        qr_code {
+          fixed {
+            src
+          }
+        }
         projects_subtitle {
           text
         }
