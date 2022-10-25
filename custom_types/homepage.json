@@ -258,10 +258,58 @@
     }
   },
   "contactInfo": {
+    "contact_number1": {
+      "type": "Number",
+      "config": {
+        "label": "contact number1"
+      }
+    },
+    "contact_number2": {
+      "type": "Number",
+      "config": {
+        "label": "contact number2"
+      }
+    },
     "whatsapp1": {
       "type": "Number",
       "config": {
         "label": "whatsApp"
+      }
+    },
+    "email": {
+      "type": "Link",
+      "config": {
+        "label": "email",
+        "select": null
+      }
+    },
+    "facebook_page_name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading6",
+        "label": "facebook page name",
+        "placeholder": "fb page id, no space"
+      }
+    },
+    "facebook_page_url": {
+      "type": "Link",
+      "config": {
+        "label": "facebook page url",
+        "select": null
+      }
+    },
+    "address": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,strong",
+        "label": "Address"
+      }
+    },
+    "google_maps_link": {
+      "type": "Link",
+      "config": {
+        "label": "google maps link",
+        "select": null
       }
     },
     "qr_code": {
@@ -375,7 +423,7 @@
               "project_description": {
                 "type": "StructuredText",
                 "config": {
-                  "multi": "paragraph, strong, em",
+                  "multi": "paragraph,strong,em",
                   "label": "project description"
                 }
               },

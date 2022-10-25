@@ -1,3 +1,8 @@
+.footer {
+  background: var(--color-primary);
+  background: url("../../images/metal-sheet.jpg") center/6rem 100%;
+}
+
 .footer a {
   color: var(--color-white);
 }
@@ -6,9 +11,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   color: var(--color-white);
-  background: var(--color-primary);
-  background: url("../../images/metal-sheet.jpg") center/6rem 100%;
+  max-width: var(--maxWidth-wrapper);
   padding: calc(4 * var(--flexible-base2)) calc(2 * var(--flexible-base2));
+  margin: 0 auto;
   position: relative;
 }
 

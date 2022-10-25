@@ -1,0 +1,10 @@
+.address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.address p {
+  margin-bottom: 0;
+}

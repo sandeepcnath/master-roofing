@@ -262,7 +262,7 @@ button:focus,
 }
 
 .iconButton__icon {
-  /* background: var(--color-primary); */
+  align-self: start;
   width: 2.25rem;
   padding: 0.5rem;
   margin-right: 0.5rem;
@@ -270,12 +270,16 @@ button:focus,
   position: relative;
 }
 
+.iconButton__icon_full {
+  padding: 0;
+}
+
 .iconButton::before {
   content: "";
   background: linear-gradient(#19afff, #0062e0);
   width: 2.25rem;
+  height: 2.25rem;
   border-radius: 50%;
-  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
@@ -292,11 +296,12 @@ button:focus,
 .iconButton:hover::before,
 .iconButton:active::before {
   width: 100%;
+  height: 100%;
   border-radius: 0.325em;
   left: 0;
 }
 
-/* .iconButton_facebook .iconButton__icon,
-.iconButton_facebook .iconButton::before {
-  background-color: linear-gradient(#19afff, #0062e0);
-} */
+.iconButton_green .iconButton__icon,
+.iconButton_green::before {
+  background: linear-gradient(#1bd741, #1bd741);
+}

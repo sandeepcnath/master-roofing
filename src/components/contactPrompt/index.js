@@ -19,7 +19,7 @@ const ContactPrompt = ({ data }) => {
             <a
               href={"https://wa.me/" + homeData.whatsapp1}
               className="button button_icon"
-              title="click here to chat with us in WhatsApp"
+              title="click to chat with us in WhatsApp"
             >
               <img src={WhatsAppLogo} />
             </a>
