@@ -7,7 +7,7 @@ const WhyUs = ({ data }) => {
   const reasons = homeData.body.filter(reason => reason.slice_type == "reasons")
   return (
     <section className="whyUs">
-      <div className="whyUs__inner">
+      <div className="section__inner">
         <div className="section-title-wrap text-container">
           <h2 className="section-title">{homeData.why_title.text}</h2>
         </div>

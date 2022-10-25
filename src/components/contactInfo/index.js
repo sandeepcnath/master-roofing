@@ -2,7 +2,7 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import React from "react"
 import { PrismicRichText } from "@prismicio/react"
 import IconPhone from "../../images/icons/phone.svg"
-import WhatsAppLogo from "../../images/icons/whatsapp.svg"
+import WhatsAppLogo2 from "../../images/icons/whatsapp2.svg"
 import IconMap from "../../images/icons/map.svg"
 
 import "./index.css"
@@ -67,12 +67,12 @@ export default function ContactInfo() {
             {data.prismicHomepage.data.contact_number2}
           </a>
           <a
-            className="iconButton iconButton_green"
+            className="iconButton"
             href={"https://wa.me/" + data.prismicHomepage.data.whatsapp1}
             title="click here to chat with us in WhatsApp"
           >
             <img
-              src={WhatsAppLogo}
+              src={WhatsAppLogo2}
               alt="whatsapp"
               className="iconButton__icon iconButton__icon_full"
             />
@@ -88,22 +88,10 @@ export default function ContactInfo() {
             <svg
               viewBox="0 0 36 36"
               className="a8c37x1j ms05siws hwsy1cff b7h9ocf4"
-              fill="url(#jsc_s_2)"
+              fill="transparent"
               height="36"
               width="36"
             >
-              <defs>
-                <linearGradient
-                  x1="50%"
-                  x2="50%"
-                  y1="97.0782153%"
-                  y2="0%"
-                  id="jsc_s_2"
-                >
-                  <stop offset="0%" stopColor="#0062E0"></stop>
-                  <stop offset="100%" stopColor="#19AFFF"></stop>
-                </linearGradient>
-              </defs>
               <path d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z"></path>
               <path
                 className="p361ku9c"

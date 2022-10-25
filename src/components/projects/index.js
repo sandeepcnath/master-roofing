@@ -19,7 +19,7 @@ const Projects = ({ data }) => {
 
   return (
     <section className="projects">
-      <div className="">
+      <div className="section__inner">
         <div className="section-title-wrap text-container">
           <h2 className="section-title">{homeData.projects_title.text}</h2>
           <p className="section-subtitle">{homeData.projects_subtitle.text}</p>

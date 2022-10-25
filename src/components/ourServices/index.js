@@ -9,7 +9,7 @@ const OurServices = ({ data }) => {
   )
   return (
     <section className="ourServices alt-color">
-      <div className="ourServices__inner">
+      <div className="section__inner">
         <div className="section-title-wrap text-container">
           <h2 className="section-title">{homeData.services_title.text}</h2>
         </div>

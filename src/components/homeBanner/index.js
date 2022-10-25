@@ -15,27 +15,28 @@ const HomeBanner = ({ data }) => {
         backgroundImage: `url(${backgroundUrl})`,
       }}
     >
-      <PrismicRichText field={homeData.main_title.richText} />
-      <PrismicRichText field={homeData.main_subtitle.richText} />
-      <div className="button-wrap">
-        <Link to={homeData.primary_cta.url} className="button button_primary">
-          {homeData.primary_cta_text.text}
-        </Link>
-        <Link
-          to={homeData.secondary_cta.url}
-          className="button button_primary button_secondary"
-        >
-          {homeData.secondary_cta_text.text}
-        </Link>
-        <a
-          href={homeData.whatsapp.url}
-          className="button button_icon"
-          title="click here to chat with us in WhatsApp"
-        >
-          <img src={WhatsAppLogo} />
-        </a>
+      <div className="section__inner">
+        <PrismicRichText field={homeData.main_title.richText} />
+        <PrismicRichText field={homeData.main_subtitle.richText} />
+        <div className="button-wrap">
+          <Link to={homeData.primary_cta.url} className="button button_primary">
+            {homeData.primary_cta_text.text}
+          </Link>
+          <Link
+            to={homeData.secondary_cta.url}
+            className="button button_primary button_secondary"
+          >
+            {homeData.secondary_cta_text.text}
+          </Link>
+          <a
+            href={homeData.whatsapp.url}
+            className="button button_icon"
+            title="click here to chat with us in WhatsApp"
+          >
+            <img src={WhatsAppLogo} />
+          </a>
+        </div>
       </div>
-      {/* <GatsbyImage image={image} /> */}
     </section>
   )
 }
