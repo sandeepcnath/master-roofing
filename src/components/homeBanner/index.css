@@ -29,7 +29,7 @@
   width: calc(2.7 * var(--fontSize-1));
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .banner {
     background-attachment: fixed;
   }

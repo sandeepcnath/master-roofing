@@ -1,6 +1,13 @@
 .projects__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  gap: calc(4 * var(--flexible-base2));
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 23rem));
+  gap: calc(4 * var(--flexible-base));
   justify-content: center;
+}
+
+@media (min-width: 64rem) {
+  .projects__list {
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: calc(4 * var(--flexible-base));
+  }
 }

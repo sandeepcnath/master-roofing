@@ -63,13 +63,13 @@
   --text-shadow: 2px 2px 0.2em #000a;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   :root {
     /* 1.200 Minor Third Type Scale */
     --fontSize-0: 1rem;
     --fontSize-1: 1.125rem;
     --fontSize-2: 1.35rem;
-    --fontSize-3: 1.62rem;
+    --fontSize-3: 1.64rem;
     /* --fontSize-4: 1.94rem; */
     --fontSize-4: 1.8rem;
     --fontSize-5: 2.33rem;
@@ -81,7 +81,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 64rem) {
   :root {
     --flexible-base: 0.75rem;
     --flexible-base2: 0.875rem;

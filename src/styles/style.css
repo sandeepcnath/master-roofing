@@ -15,6 +15,10 @@
   margin-inline: auto;
 }
 
+.display-md {
+  display: none;
+}
+
 /* HTML elements */
 
 .button_transparent {
@@ -46,4 +50,10 @@
 
 .alt-color {
   background-color: var(--color-accent);
+}
+
+@media (min-width: 64rem) {
+  .display-md {
+    display: block;
+  }
 }

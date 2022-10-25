@@ -1,20 +1,19 @@
 .footer {
+  color: var(--color-white);
   background: var(--color-primary);
   background: url("../../images/metal-sheet.jpg") center/6rem 100%;
 }
 
-.footer a {
-  color: var(--color-white);
-}
-
 .footer__head {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  align-items: start;
+  gap: calc(3 * var(--flexible-base2));
   color: var(--color-white);
   max-width: var(--maxWidth-wrapper);
   padding: calc(4 * var(--flexible-base2)) calc(2 * var(--flexible-base2));
   margin: 0 auto;
   position: relative;
+  text-shadow: var(--color-primary) 0 0 0.25em;
 }
 
 .footer__wrap {
@@ -25,13 +24,15 @@
   justify-content: center;
 }
 
+.footer__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--flexible-base2) calc(2 * var(--flexible-base2));
+}
+
 .footer__link {
   color: var(--color-white);
-  text-shadow: var(--color-primary) 0 0 0.25em;
-  /* background: var(--color-primary); */
-  margin-bottom: 0.375em;
   border-radius: 0.125em;
-  /* box-shadow: inset 0 0 0 $white; */
   display: inline-block;
   transition: color, box-shadow, 0.25s ease;
 }
@@ -50,6 +51,10 @@
 
 .button_contact {
   margin-bottom: 0.375em;
+}
+
+.footer__qr-wrap {
+  display: none;
 }
 
 .footer__qr {
@@ -71,4 +76,26 @@
 
 .developedByLink {
   background: var(--color-primary);
+}
+
+@media (min-width: 39rem) {
+  .footer__head {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .footer__links {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 64rem) {
+  .footer__head {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer__qr-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

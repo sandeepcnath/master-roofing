@@ -23,7 +23,7 @@ export default function Footer() {
       render={data => (
         <footer className="footer">
           <div className="footer__head">
-            <ul className="footer__link-group">
+            <ul className="footer__links">
               <li>
                 <Link className="footer__link" to="/" title="Home">
                   Home
@@ -58,16 +58,14 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-            <ul className="footer__link-group">
-              <li>
-                <p className="small">Scan to save our contact card</p>
-                <img
-                  className="footer__qr"
-                  src={data.prismicHomepage.data.qr_code.fixed.src}
-                  alt=""
-                />
-              </li>
-            </ul>
+            <div className="footer__qr-wrap">
+              <p className="small">Scan to save our contact card</p>
+              <img
+                className="footer__qr"
+                src={data.prismicHomepage.data.qr_code.fixed.src}
+                alt=""
+              />
+            </div>
             <div className="footer__link-group">
               <ContactInfo />
             </div>
