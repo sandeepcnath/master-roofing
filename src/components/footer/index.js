@@ -1,5 +1,6 @@
 import { Link, StaticQuery, graphql } from "gatsby"
 import React from "react"
+import IconPhone from "../../images/icons/phone.svg"
 
 import "./index.css"
 
@@ -70,17 +71,21 @@ export default function Footer() {
             <ul className="footer__link-group">
               <li>
                 <a
-                  className="button_contact"
+                  className="iconButton iconButton_phone"
                   href="tel:+914842395453"
                   title="Click to call +91 484 239 5453"
                 >
-                  {/* <img src={Phone} alt="phone" className="button_contact__icon" /> */}
+                  <img
+                    src={IconPhone}
+                    alt="phone"
+                    className="iconButton__icon"
+                  />
                   +91 484 239 5453
                 </a>
               </li>
               <li>
                 <a
-                  className="button_facebook"
+                  className="iconButton"
                   target="_blank"
                   rel="noreferrer"
                   title="Master Roofing Facebook page"
