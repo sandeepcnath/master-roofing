@@ -57,20 +57,10 @@ const Header = () => {
               <Link
                 className="link_text nav__link-a"
                 activeClassName="nav__link-a_active"
-                to="/daivajnas"
+                to="/products"
                 partiallyActive={true}
               >
-                Daivajnas
-              </Link>
-            </li>
-            <li className="nav__link-li">
-              <Link
-                className="link_text nav__link-a"
-                activeClassName="nav__link-a_active"
-                to="/#our-services"
-                partiallyActive={true}
-              >
-                Services
+                Products
               </Link>
             </li>
             <li className="nav__link-li">
@@ -80,17 +70,7 @@ const Header = () => {
                 to="/#contact-us"
                 partiallyActive={true}
               >
-                Contact
-              </Link>
-            </li>
-            <li className="nav__link-li">
-              <Link
-                className="link_text nav__link-a"
-                activeClassName="nav__link-a_active"
-                to="/blog"
-                partiallyActive={true}
-              >
-                Blog
+                Contact us
               </Link>
             </li>
           </ul>

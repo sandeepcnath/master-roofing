@@ -67,7 +67,7 @@
   text-align: center;
   text-shadow: var(--color-primary) 1px 0 2px;
   background: var(--color-primary);
-  padding: calc(1 * var(--flexible-base2)) calc(2 * var(--flexible-base2));
+  padding: calc(1.5 * var(--flexible-base2)) calc(2 * var(--flexible-base2));
 }
 
 .footer__bottom p {
