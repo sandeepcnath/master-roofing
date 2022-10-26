@@ -19,36 +19,6 @@ body {
   background: var(--color-white);
 }
 
-img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
-
-main > section {
-  padding-block: calc(8 * var(--flexible-base2));
-}
-
-.section__inner {
-  width: 100%;
-  max-width: var(--maxWidth-wrapper);
-  padding-inline: calc(2 * var(--flexible-base2));
-  margin: 0 auto;
-  position: relative;
-}
-
-::selection {
-  color: #fff;
-  background-color: var(--color-primary);
-  text-shadow: 1px 1px 2px #121248, 0 0 1em #121248, 0 0 0.2em #121248;
-}
-
-hr {
-  background: var(--color-accent);
-  height: 1px;
-  border: 0;
-}
-
 /* Heading */
 
 h1,
@@ -155,6 +125,36 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+main > section {
+  padding-block: calc(8 * var(--flexible-base2));
+}
+
+.section__inner {
+  width: 100%;
+  max-width: var(--maxWidth-wrapper);
+  padding-inline: calc(2 * var(--flexible-base2));
+  margin: 0 auto;
+  position: relative;
+}
+
+::selection {
+  color: #fff;
+  background-color: var(--color-primary);
+  text-shadow: 1px 1px 2px #121248, 0 0 1em #121248, 0 0 0.2em #121248;
+}
+
+hr {
+  background: var(--color-accent);
+  height: 1px;
+  border: 0;
 }
 
 button,

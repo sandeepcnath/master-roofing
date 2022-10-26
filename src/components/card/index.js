@@ -14,6 +14,7 @@ const Card = data => {
         style={{
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
+          "--swiper-pagination-bullet-inactive-opacity": ".8",
           "--swiper-navigation-size": "36px",
         }}
         pagination={{

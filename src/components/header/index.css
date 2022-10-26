@@ -8,6 +8,11 @@
 
 .nav {
   background-color: var(--color-secondary);
+  background: linear-gradient(
+    135deg,
+    var(--color-secondary-light) 0%,
+    var(--color-secondary) 80%
+  );
 }
 
 .nav__inner-wrap {
@@ -34,7 +39,8 @@
 }
 
 .nav__primary-link {
-  width: 12.5rem;
+  display: flex;
+  width: 13rem;
 }
 
 .nav__link-a {
@@ -85,9 +91,19 @@
   }
 }
 
+@media (min-width: 24rem) {
+  .nav__primary-link {
+    width: 15rem;
+  }
+}
+
 @media (min-width: 48rem) {
   .nav {
     flex-wrap: nowrap;
+  }
+
+  .nav__primary-link {
+    width: 24rem;
   }
 
   .nav__link-ul {

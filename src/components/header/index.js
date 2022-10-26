@@ -1,6 +1,7 @@
 import { Link, graphql, useStaticQuery } from "gatsby"
 import React, { useState } from "react"
 import Headroom from "react-headroom"
+import IconLogo from "../../images/icons/logo.svg"
 import "./index.css"
 
 const Header = () => {
@@ -29,11 +30,7 @@ const Header = () => {
             to="/"
             title="Ashtamangalaprasnam Home"
           >
-            zxxxx
-            {/* <Image
-              fluid={imageLogo.file.childImageSharp.fluid}
-              alt="Ashtamangalaprasnam Logo"
-            /> */}
+            <img src={IconLogo} />
           </Link>
           <button className="button button_menu" onClick={toggleMenuVisibility}>
             MENU

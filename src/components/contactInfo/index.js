@@ -39,7 +39,7 @@ export default function ContactInfo() {
       render={data => (
         <address className="address">
           <a
-            className="iconButton iconButton_phone"
+            className="iconButton"
             href={data.prismicHomepage.data.google_maps_link.url}
             title="click here for our location in map"
           >
@@ -51,7 +51,7 @@ export default function ContactInfo() {
             </div>
           </a>
           <a
-            className="iconButton iconButton_phone"
+            className="iconButton"
             href={`tel: ${data.prismicHomepage.data.contact_number1}`}
             title={`Click to call ${data.prismicHomepage.data.contact_number1}`}
           >
@@ -59,7 +59,7 @@ export default function ContactInfo() {
             {data.prismicHomepage.data.contact_number1}
           </a>
           <a
-            className="iconButton iconButton_phone"
+            className="iconButton"
             href={`tel: ${data.prismicHomepage.data.contact_number2}`}
             title={`Click to call ${data.prismicHomepage.data.contact_number2}`}
           >
