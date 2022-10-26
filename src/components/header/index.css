@@ -31,6 +31,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .button_menu {
@@ -47,7 +48,7 @@
 
 .nav__primary-link {
   display: flex;
-  width: 13rem;
+  width: 15rem;
 }
 
 .nav__link-a {
@@ -95,12 +96,6 @@
 
   .nav__link-ul_shown {
     height: calc(100vh - 82px);
-  }
-}
-
-@media (min-width: 24rem) {
-  .nav__primary-link {
-    width: 15rem;
   }
 }
 
