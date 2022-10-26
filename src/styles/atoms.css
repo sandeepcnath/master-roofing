@@ -133,6 +133,12 @@ img {
   height: 100%;
 }
 
+main {
+  background-color: var(--color-white);
+  position: relative;
+  z-index: 1;
+}
+
 main > section {
   padding-block: calc(8 * var(--flexible-base2));
 }

@@ -89,6 +89,13 @@
 }
 
 @media (min-width: 64rem) {
+  .footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
   .footer__head {
     grid-template-columns: 1fr 1fr 1fr;
   }
