@@ -2,6 +2,10 @@
   color: var(--color-white);
   background: var(--color-primary);
   background: url("../../images/metal-sheet.jpg") center/6rem 100%;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .footer__head {
@@ -89,13 +93,6 @@
 }
 
 @media (min-width: 64rem) {
-  .footer {
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-
   .footer__head {
     grid-template-columns: 1fr 1fr 1fr;
   }
