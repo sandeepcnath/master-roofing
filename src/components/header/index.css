@@ -27,8 +27,15 @@
   justify-content: space-between;
 }
 
-.nav .button_menu {
+.nav__mobile-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button_menu {
   color: var(--color-secondary);
+  line-height: 1.5;
   background-color: var(--color-white);
 }
 
@@ -103,7 +110,11 @@
   }
 
   .nav__primary-link {
-    width: 24rem;
+    width: 20rem;
+  }
+
+  .nav__mobile-header {
+    width: auto;
   }
 
   .nav__link-ul {

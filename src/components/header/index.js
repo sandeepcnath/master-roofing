@@ -25,16 +25,21 @@ const Header = () => {
     <Headroom>
       <nav className="nav">
         <div className="nav__inner-wrap">
-          <Link
-            className="nav__primary-link"
-            to="/"
-            title="Ashtamangalaprasnam Home"
-          >
-            <img src={IconLogo} />
-          </Link>
-          <button className="button button_menu" onClick={toggleMenuVisibility}>
-            MENU
-          </button>
+          <div className="nav__mobile-header">
+            <Link
+              className="nav__primary-link"
+              to="/"
+              title="Ashtamangalaprasnam Home"
+            >
+              <img src={IconLogo} />
+            </Link>
+            <button
+              className="button button_menu"
+              onClick={toggleMenuVisibility}
+            >
+              MENU
+            </button>
+          </div>
           <ul
             className={
               "nav__link-ul " +
