@@ -1,24 +1,19 @@
 .banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 80vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding-block: 0 calc(6 * var(--flexible-base2));
 }
 
-.banner h1 {
-  color: var(--color-white);
-  font-size: var(--fontSize-7);
-  text-shadow: var(--text-shadow);
+.banner__inner {
+  display: grid;
+  align-items: center;
+  gap: calc(3 * var(--flexible-base));
 }
+
+/* .banner h1 {
+  font-size: var(--fontSize-7);
+} */
 
 .banner p {
-  color: var(--color-white);
-  font-size: var(--fontSize-3);
-  text-shadow: var(--text-shadow);
-  max-width: 45rem;
+  font-size: var(--fontSize-2);
 }
 
 .banner .button {
@@ -29,8 +24,25 @@
   width: calc(2.7 * var(--fontSize-1));
 }
 
-@media (min-width: 48rem) {
+.banner__img-wrap {
+  display: flex;
+  order: -1;
+  margin: 0 calc(-2 * var(--flexible-base2));
+}
+
+@media (min-width: 64rem) {
   .banner {
-    background-attachment: fixed;
+    padding-block: calc(6 * var(--flexible-base2));
+  }
+
+  .banner__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .banner__img-wrap {
+    order: 0;
+    margin: 0;
+    border-radius: 2rem 0;
+    overflow: hidden;
   }
 }
