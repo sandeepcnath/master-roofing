@@ -21,7 +21,8 @@ const HomeBanner = ({ data }) => {
               {homeData.primary_cta_text.text}
             </Link>
             <Link
-              to={homeData.secondary_cta.url}
+              to="/contact-us"
+              // to={homeData.secondary_cta.url}
               className="button button_primary button_secondary"
             >
               {homeData.secondary_cta_text.text}

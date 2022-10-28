@@ -1,7 +1,6 @@
 import { Link, StaticQuery, graphql } from "gatsby"
 import React from "react"
 import ContactInfo from "../contactInfo"
-import IconPhone from "../../images/icons/phone.svg"
 import "./index.css"
 
 export default function Footer() {

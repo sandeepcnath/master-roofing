@@ -1,4 +1,4 @@
-import { Link, StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import React from "react"
 import { PrismicRichText } from "@prismicio/react"
 import IconPhone from "../../images/icons/phone.svg"

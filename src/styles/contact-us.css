@@ -1,0 +1,17 @@
+.content-grid {
+  display: grid;
+  gap: calc(6 * var(--flexible-base));
+  align-items: flex-start;
+}
+
+@media (min-width: 40rem) {
+  .content-grid {
+    grid-template-columns: min-content 1fr;
+    max-width: 45rem;
+    margin: auto;
+  }
+
+  .content-grid .address {
+    grid-template-columns: 1fr;
+  }
+}

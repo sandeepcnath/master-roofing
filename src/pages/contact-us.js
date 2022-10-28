@@ -2,6 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import ContactInfo from "../components/contactInfo"
+import PrimaryForm from "../components/primary-form/primary-form"
+import "../styles/contact-us.css"
 
 const ContactUs = ({ data, location }) => {
   const contactUsData = data.prismicHomepage.data
@@ -18,6 +20,7 @@ const ContactUs = ({ data, location }) => {
           </div>
           <div className="content-grid">
             <ContactInfo />
+            <PrimaryForm />
           </div>
         </div>
       </section>
