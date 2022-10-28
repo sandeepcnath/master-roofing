@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import { Link, graphql } from "gatsby"
+import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HomeBanner from "../components/homeBanner"
@@ -9,26 +9,7 @@ import OurServices from "../components/ourServices"
 import ContactPrompt from "../components/contactPrompt"
 import Projects from "../components/projects"
 
-import postImage from "../images/post.jpg"
-const BlogIndex = ({ data, location }) => {
-  const modalData = {
-    image: postImage,
-  }
-
-  const [isPostModalVisible, setIsPostModalVisible] = useState(false)
-  const [selectedPost, setSelectedPost] = useState(false)
-
-  const openPostModal = () => {
-    const body = document.querySelector("body")
-    body.style.overflow = "hidden"
-    setIsPostModalVisible(true)
-  }
-  const closePostModal = () => {
-    const body = document.querySelector("body")
-    body.style.overflow = "auto"
-    setIsPostModalVisible(false)
-  }
-
+const HomePage = ({ data, location }) => {
   return (
     <Layout location={location} title="Master Roofing">
       <Seo title="Master Roofing" />
@@ -38,23 +19,11 @@ const BlogIndex = ({ data, location }) => {
       <OurServices data={data} />
       <ContactPrompt data={data} />
       <Projects data={data} />
-      {/* <CardList
-        items={posts}
-        onCardClick={value => {
-          setSelectedPost(posts.find(item => item.id === value))
-          openPostModal()
-        }}
-      /> */}
-      {/* <Modal
-        data={selectedPost}
-        isVisible={isPostModalVisible}
-        handleModalClose={closePostModal}
-      /> */}
     </Layout>
   )
 }
 
-export default BlogIndex
+export default HomePage
 
 export const pageQuery = graphql`
   query {

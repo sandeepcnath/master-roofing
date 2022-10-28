@@ -67,7 +67,7 @@ export default function Footer() {
               />
             </div>
             <div className="footer__link-group">
-              <ContactInfo />
+              <ContactInfo customClass="address__footer" />
             </div>
           </div>
 

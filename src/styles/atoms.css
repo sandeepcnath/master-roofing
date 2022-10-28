@@ -254,14 +254,13 @@ button:focus,
 }
 
 .iconButton {
-  color: var(--color-white);
   width: fit-content;
   padding-right: 1em;
   display: flex;
   align-items: center;
   position: relative;
   z-index: 1;
-  /* transition: color 0.25s ease-in; */
+  transition: color 0.25s ease-in;
 }
 
 .iconButton svg {
@@ -309,7 +308,7 @@ button:focus,
 .iconButton:focus,
 .iconButton:hover,
 .iconButton:active {
-  /* color: var(--color-text); */
+  color: var(--color-white);
   text-shadow: none;
 }
 

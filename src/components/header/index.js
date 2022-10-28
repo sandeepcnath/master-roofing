@@ -69,7 +69,7 @@ const Header = () => {
               <Link
                 className="link_text nav__link-a"
                 activeClassName="nav__link-a_active"
-                to="/#contact-us"
+                to="/contact-us"
                 partiallyActive={true}
               >
                 Contact us

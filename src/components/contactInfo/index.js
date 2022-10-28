@@ -7,7 +7,7 @@ import IconMap from "../../images/icons/map.svg"
 
 import "./index.css"
 
-export default function ContactInfo() {
+export default function ContactInfo({ customClass }) {
   return (
     <StaticQuery
       query={graphql`
@@ -37,7 +37,8 @@ export default function ContactInfo() {
         }
       `}
       render={data => (
-        <address className="address">
+        <address className={customClass ? `address ${customClass}` : "address"}>
+          {console.log("customClass", customClass)}
           <a
             className="iconButton"
             href={data.prismicHomepage.data.google_maps_link.url}

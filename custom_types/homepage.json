@@ -1,448 +1,480 @@
 {
-  "Main": {
-    "main_title": {
-      "type": "StructuredText",
-      "config": {
-        "single": "heading1",
-        "label": "Main title"
+  "Main" : {
+    "main_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "Main title"
       }
     },
-    "main_subtitle": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph,strong,list-item",
-        "label": "Main subtitle"
+    "main_subtitle" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,strong,list-item",
+        "label" : "Main subtitle"
       }
     },
-    "primary_cta_text": {
-      "type": "StructuredText",
-      "config": {
-        "single": "heading6",
-        "label": "Primary CTA text",
-        "placeholder": "text for main link"
+    "primary_cta_text" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "Primary CTA text",
+        "placeholder" : "text for main link"
       }
     },
-    "primary_cta": {
-      "type": "Link",
-      "config": {
-        "label": "Primary CTA",
-        "placeholder": "the main link",
-        "select": null
+    "primary_cta" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "Primary CTA",
+        "placeholder" : "the main link",
+        "select" : null
       }
     },
-    "secondary_cta_text": {
-      "type": "StructuredText",
-      "config": {
-        "single": "heading6",
-        "label": "Secondary CTA text",
-        "placeholder": "text for secondary link"
+    "secondary_cta_text" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "Secondary CTA text",
+        "placeholder" : "text for secondary link"
       }
     },
-    "secondary_cta": {
-      "type": "Link",
-      "config": {
-        "label": "Secondary CTA",
-        "placeholder": "second link",
-        "select": null
+    "secondary_cta" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "Secondary CTA",
+        "placeholder" : "second link",
+        "select" : null
       }
     },
-    "whatsapp": {
-      "type": "Link",
-      "config": {
-        "label": "WhatsApp",
-        "select": null
+    "whatsapp" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "WhatsApp",
+        "select" : null
       }
     },
-    "banner_background_image": {
-      "type": "Image",
-      "config": {
-        "constraint": {},
-        "thumbnails": [],
-        "label": "Banner background image"
+    "banner_background_image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Banner background image"
       }
     }
   },
-  "Motto": {
-    "motto_title": {
-      "type": "StructuredText",
-      "config": {
-        "single": "heading2",
-        "label": "Motto title",
-        "placeholder": "Motto title"
+  "Motto" : {
+    "motto_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading2",
+        "label" : "Motto title",
+        "placeholder" : "Motto title"
       }
     },
-    "motto_text": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph,strong,em,list-item",
-        "label": "Motto text",
-        "placeholder": "Motto text"
+    "motto_text" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,strong,em,list-item",
+        "label" : "Motto text",
+        "placeholder" : "Motto text"
       }
     },
-    "owner_name": {
-      "type": "StructuredText",
-      "config": {
-        "single": "heading5",
-        "label": "Owner name"
+    "owner_name" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading5",
+        "label" : "Owner name"
       }
     },
-    "owner_subtitle": {
-      "type": "StructuredText",
-      "config": {
-        "single": "paragraph",
-        "label": "Owner subtitle"
+    "owner_subtitle" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph",
+        "label" : "Owner subtitle"
       }
     },
-    "owner_image": {
-      "type": "Image",
-      "config": {
-        "constraint": {},
-        "thumbnails": [],
-        "label": "Owner image"
+    "owner_image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Owner image"
       }
     }
   },
-  "whyus": {
-    "why_title": {
-      "type": "StructuredText",
-      "config": {
-        "single": "heading2",
-        "label": "Why title",
-        "placeholder": "a title asking why should customers choose us"
+  "whyus" : {
+    "why_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading2",
+        "label" : "Why title",
+        "placeholder" : "a title asking why should customers choose us"
       }
     },
-    "body": {
-      "type": "Slices",
-      "fieldset": "Slice zone",
-      "config": {
-        "labels": {
-          "reasons": [
-            {
-              "display": "whyReasonsList",
-              "name": "whyreasonslist"
-            }
-          ]
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : {
+          "reasons" : [ {
+            "display" : "whyReasonsList",
+            "name" : "whyreasonslist"
+          } ]
         },
-        "choices": {
-          "reasons": {
-            "type": "Slice",
-            "fieldset": "Reasons",
-            "description": "for lists with title and text",
-            "icon": "autorenew",
-            "display": "list",
-            "non-repeat": {
-              "icon": {
-                "type": "Image",
-                "config": {
-                  "constraint": {},
-                  "thumbnails": [],
-                  "label": "icon"
+        "choices" : {
+          "reasons" : {
+            "type" : "Slice",
+            "fieldset" : "Reasons",
+            "description" : "for lists with title and text",
+            "icon" : "autorenew",
+            "display" : "list",
+            "non-repeat" : {
+              "icon" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "icon"
                 }
               },
-              "title": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "heading3",
-                  "label": "title"
+              "title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading3",
+                  "label" : "title"
                 }
               },
-              "text": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph,strong,em",
-                  "label": "text"
+              "text" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,strong,em",
+                  "label" : "text"
                 }
               },
-              "link": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "heading6",
-                  "label": "link",
-                  "placeholder": "/address"
+              "link" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading6",
+                  "label" : "link",
+                  "placeholder" : "/address"
                 }
               },
-              "link_title": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "heading6",
-                  "label": "link title",
-                  "placeholder": "choose only if there's a link"
+              "link_title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading6",
+                  "label" : "link title",
+                  "placeholder" : "choose only if there's a link"
                 }
               }
             },
-            "repeat": {}
+            "repeat" : { }
           }
         }
       }
     }
   },
-  "ourServices": {
-    "services_title": {
-      "type": "StructuredText",
-      "config": {
-        "single": "heading2,heading6",
-        "label": "Services title"
+  "ourServices" : {
+    "services_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading2,heading6",
+        "label" : "Services title"
       }
     },
-    "body1": {
-      "type": "Slices",
-      "fieldset": "Slice zone",
-      "config": {
-        "labels": {
-          "serviceslist": [
-            {
-              "display": "servicesList",
-              "name": "serviceslist"
-            }
-          ]
+    "body1" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : {
+          "serviceslist" : [ {
+            "display" : "servicesList",
+            "name" : "serviceslist"
+          } ]
         },
-        "choices": {
-          "serviceslist": {
-            "type": "Slice",
-            "fieldset": "servicesList",
-            "description": "list of services",
-            "icon": "art_track",
-            "display": "list",
-            "non-repeat": {
-              "icon": {
-                "type": "Image",
-                "config": {
-                  "constraint": {},
-                  "thumbnails": [],
-                  "label": "icon"
+        "choices" : {
+          "serviceslist" : {
+            "type" : "Slice",
+            "fieldset" : "servicesList",
+            "description" : "list of services",
+            "icon" : "art_track",
+            "display" : "list",
+            "non-repeat" : {
+              "icon" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "icon"
                 }
               },
-              "title": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "heading3",
-                  "label": "title"
+              "title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading3",
+                  "label" : "title"
                 }
               },
-              "text": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph,strong,em",
-                  "label": "text"
+              "text" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,strong,em",
+                  "label" : "text"
                 }
               },
-              "link": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "heading6",
-                  "label": "link",
-                  "placeholder": "/the address"
+              "link" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading6",
+                  "label" : "link",
+                  "placeholder" : "/the address"
                 }
               },
-              "link_title": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "heading6",
-                  "label": "link_title"
+              "link_title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading6",
+                  "label" : "link_title"
                 }
               }
             },
-            "repeat": {}
+            "repeat" : { }
           }
         }
       }
     }
   },
-  "contactForServicePrompt": {
-    "contactforservice_title": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "heading3,heading4",
-        "label": "contactForService Title"
+  "contactForServicePrompt" : {
+    "contactforservice_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "heading3,heading4",
+        "label" : "contactForService Title"
       }
     }
   },
-  "contactInfo": {
-    "contact_number1": {
-      "type": "Number",
-      "config": {
-        "label": "contact number1"
+  "contactInfo" : {
+    "contact_number1" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "contact number1"
       }
     },
-    "contact_number2": {
-      "type": "Number",
-      "config": {
-        "label": "contact number2"
+    "contact_number2" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "contact number2"
       }
     },
-    "whatsapp1": {
-      "type": "Number",
-      "config": {
-        "label": "whatsApp"
+    "whatsapp1" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "whatsApp"
       }
     },
-    "email": {
-      "type": "Link",
-      "config": {
-        "label": "email",
-        "select": null
+    "email" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "email",
+        "select" : null
       }
     },
-    "facebook_page_name": {
-      "type": "StructuredText",
-      "config": {
-        "single": "heading6",
-        "label": "facebook page name",
-        "placeholder": "fb page id, no space"
+    "facebook_page_name" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "facebook page name",
+        "placeholder" : "fb page id, no space"
       }
     },
-    "facebook_page_url": {
-      "type": "Link",
-      "config": {
-        "label": "facebook page url",
-        "select": null
+    "facebook_page_url" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "facebook page url",
+        "select" : null
       }
     },
-    "address": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph,strong",
-        "label": "Address"
+    "address" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,strong",
+        "label" : "Address"
       }
     },
-    "google_maps_link": {
-      "type": "Link",
-      "config": {
-        "label": "google maps link",
-        "select": null
+    "google_maps_link" : {
+      "type" : "Link",
+      "config" : {
+        "label" : "google maps link",
+        "select" : null
       }
     },
-    "qr_code": {
-      "type": "Image",
-      "config": {
-        "constraint": {},
-        "thumbnails": [],
-        "label": "QR code"
+    "qr_code" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "QR code"
       }
     }
   },
-  "projects": {
-    "projects_title": {
-      "type": "StructuredText",
-      "config": {
-        "single": "heading2",
-        "label": "projects title"
+  "projects" : {
+    "projects_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading2",
+        "label" : "projects title"
       }
     },
-    "projects_subtitle": {
-      "type": "StructuredText",
-      "config": {
-        "single": "heading6",
-        "label": "projects subtitle"
+    "projects_subtitle" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "projects subtitle"
       }
     },
-    "body2": {
-      "type": "Slices",
-      "fieldset": "Slice zone",
-      "config": {
-        "labels": {
-          "projects": [
-            {
-              "display": "projects",
-              "name": "projects"
-            }
-          ]
+    "body2" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : {
+          "projects" : [ {
+            "display" : "projects",
+            "name" : "projects"
+          } ]
         },
-        "choices": {
-          "projects": {
-            "type": "Slice",
-            "fieldset": "projects",
-            "description": "projects",
-            "icon": "account_balance",
-            "display": "list",
-            "non-repeat": {},
-            "repeat": {
-              "project_image_1": {
-                "type": "Image",
-                "config": {
-                  "constraint": {},
-                  "thumbnails": [],
-                  "label": "project image 1"
+        "choices" : {
+          "projects" : {
+            "type" : "Slice",
+            "fieldset" : "projects",
+            "description" : "projects",
+            "icon" : "account_balance",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : {
+              "project_image_1" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "project image 1"
                 }
               },
-              "project_image_2": {
-                "type": "Image",
-                "config": {
-                  "constraint": {},
-                  "thumbnails": [],
-                  "label": "project image 2"
+              "project_image_2" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "project image 2"
                 }
               },
-              "project_image_3": {
-                "type": "Image",
-                "config": {
-                  "constraint": {},
-                  "thumbnails": [],
-                  "label": "project image 3"
+              "project_image_3" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "project image 3"
                 }
               },
-              "project_image_4": {
-                "type": "Image",
-                "config": {
-                  "constraint": {},
-                  "thumbnails": [],
-                  "label": "project image 4"
+              "project_image_4" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "project image 4"
                 }
               },
-              "project_image_5": {
-                "type": "Image",
-                "config": {
-                  "constraint": {},
-                  "thumbnails": [],
-                  "label": "project image 5"
+              "project_image_5" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "project image 5"
                 }
               },
-              "project_image_6": {
-                "type": "Image",
-                "config": {
-                  "constraint": {},
-                  "thumbnails": [],
-                  "label": "project image 6"
+              "project_image_6" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "project image 6"
                 }
               },
-              "project_image_7": {
-                "type": "Image",
-                "config": {
-                  "constraint": {},
-                  "thumbnails": [],
-                  "label": "project image 7"
+              "project_image_7" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "project image 7"
                 }
               },
-              "project_name": {
-                "type": "StructuredText",
-                "config": {
-                  "single": "heading3",
-                  "label": "project name"
+              "project_name" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading3",
+                  "label" : "project name"
                 }
               },
-              "project_description": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph,strong,em",
-                  "label": "project description"
+              "project_description" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,strong,em",
+                  "label" : "project description"
                 }
               },
-              "project_type": {
-                "type": "Select",
-                "config": {
-                  "options": [
-                    "housing",
-                    "industrial",
-                    "recreation",
-                    "wall",
-                    "water"
-                  ],
-                  "label": "project type"
+              "project_type" : {
+                "type" : "Select",
+                "config" : {
+                  "options" : [ "housing", "industrial", "recreation", "wall", "water" ],
+                  "label" : "project type"
                 }
               }
             }
           }
         }
+      }
+    }
+  },
+  "contactPage" : {
+    "contactpage_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "contactPage title"
+      }
+    },
+    "contactpage_subtext" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,strong,em",
+        "label" : "contactPage subtext"
+      }
+    },
+    "contactpage_title_for_contact_info" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading2",
+        "label" : "contactPage Title for contact info"
+      }
+    },
+    "contactpage_title_for_contact_form" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading2",
+        "label" : "contactPage title for contact form"
+      }
+    },
+    "contactpage_subtext_for_contact_form" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading3",
+        "label" : "contactPage subtext for contact form"
+      }
+    },
+    "contactpage_contact_form_success" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,heading6,strong,em",
+        "label" : "contactPage contact form success"
       }
     }
   }

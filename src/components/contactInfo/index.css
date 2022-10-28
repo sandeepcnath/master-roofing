@@ -6,6 +6,11 @@
   align-items: start;
 }
 
+.address__footer .iconButton {
+  color: var(--color-white);
+  transition: none;
+}
+
 .address p {
   margin-bottom: 0;
 }
