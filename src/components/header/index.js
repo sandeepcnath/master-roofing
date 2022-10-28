@@ -1,4 +1,4 @@
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import React, { useState } from "react"
 import Headroom from "react-headroom"
 import IconLogo from "../../images/icons/logo.svg"
@@ -10,19 +10,11 @@ const Header = () => {
     setMenuVisibility(!isMenuVisible)
   }
 
-  // const imageLogo = useStaticQuery(graphql`
-  //   query {
-  //     file(relativePath: { eq: "logo.png" }) {
-  //       childImageSharp {
-  //         fluid {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
   return (
     <Headroom>
+      <a href="#main" class="sr-only message-main-content">
+        Skip to content
+      </a>
       <nav className="nav">
         <div className="nav__inner-wrap">
           <div className="nav__mobile-header">

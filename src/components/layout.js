@@ -8,7 +8,9 @@ const Layout = ({ location, title, mainClass, children }) => {
     <>
       <Header />
       {/* <Header location={location} title={title} /> */}
-      <main className={mainClass && mainClass}>{children}</main>
+      <main id="main" className={mainClass && mainClass}>
+        {children}
+      </main>
       <Footer />
     </>
   )

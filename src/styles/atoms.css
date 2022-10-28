@@ -158,6 +158,7 @@ hr {
 
 button,
 .button {
+  line-height: 1.5;
   background: transparent;
   padding: 0.4em 1em;
   border: none;
