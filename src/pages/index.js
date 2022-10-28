@@ -11,8 +11,8 @@ import Projects from "../components/projects"
 
 const HomePage = ({ data, location }) => {
   return (
-    <Layout location={location} title="Master Roofing">
-      <Seo title="Master Roofing" />
+    <Layout location={location} title="Home">
+      <Seo title="Home" />
       <HomeBanner data={data} />
       <Motto data={data} />
       <WhyUs data={data} />

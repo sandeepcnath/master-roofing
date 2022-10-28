@@ -7,14 +7,14 @@ const prismicConfig = require("./prismic-configuration")
 
 module.exports = {
   siteMetadata: {
-    title: `Master Roofing`,
+    title: `Master Roofing & Engineering Services`,
     author: {
       name: `abhilash ss & sandeep c nath`,
     },
     // description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://w3opines.com/`,
     social: {
-      twitter: `Master Roofing`,
+      twitter: `Master Roofing & Engineering Services`,
     },
   },
   plugins: [
@@ -85,7 +85,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Master Roofing`,
+        name: `Master Roofing & Engineering Services`,
         short_name: `Master Roofing`,
         start_url: `/`,
         background_color: `#ffffff`,

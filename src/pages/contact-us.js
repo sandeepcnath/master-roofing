@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import ContactInfo from "../components/contactInfo"
 import PrimaryForm from "../components/primary-form/primary-form"
 import "../styles/contact-us.css"
@@ -9,6 +10,7 @@ const ContactUs = ({ data, location }) => {
   const contactUsData = data.prismicHomepage.data
   return (
     <Layout location={location} title="Master Roofing">
+      <Seo title="Contact us" />
       {console.log("contactUsData", contactUsData)}
       <section className="inner-page">
         <div className="section__inner">
