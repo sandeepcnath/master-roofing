@@ -4,6 +4,9 @@ import ContactInfo from "../contactInfo"
 import "./index.css"
 
 export default function Footer() {
+  const scrollIntoView = e => {
+    e.currentTarget.scrollIntoView()
+  }
   return (
     <StaticQuery
       query={graphql`
@@ -24,10 +27,16 @@ export default function Footer() {
           <div className="footer__head">
             <ul className="footer__links">
               <li>
-                <Link className="footer__link" to="/" title="Home">
+                <Link
+                  className="footer__link"
+                  to="/"
+                  title="Home"
+                  onFocus={scrollIntoView}
+                >
                   Home
                 </Link>
               </li>
+              {/* <a onFocus={handleLinkFocus}>sadsa</a> */}
               <li>
                 <Link className="footer__link" to="/#services" title="Services">
                   Services
@@ -84,6 +93,7 @@ export default function Footer() {
                   href="https://www.linkedin.com/in/sandeepcnath/"
                   target="_blank"
                   rel="noreferrer"
+                  onFocus={scrollIntoView}
                 >
                   Sandeep C Nath
                 </a>
