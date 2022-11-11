@@ -16,5 +16,17 @@
     "name": "contact_info",
     "repeatable": false,
     "value": "contactInfo.json"
+  },
+  {
+    "id": "products_page",
+    "name": "products page",
+    "repeatable": false,
+    "value": "products_page.json"
+  },
+  {
+    "id": "products",
+    "name": "products",
+    "repeatable": true,
+    "value": "products.json"
   }
 ]

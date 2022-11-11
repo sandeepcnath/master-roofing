@@ -1,0 +1,112 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "url",
+        "placeholder" : "enter-the-short-product-name-like-this"
+      }
+    },
+    "title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "title"
+      }
+    },
+    "subtext" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "subtext"
+      }
+    },
+    "description" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,strong,em,list-item,o-list-item",
+        "label" : "description"
+      }
+    },
+    "category" : {
+      "type" : "Select",
+      "config" : {
+        "options" : [ "Metal sheets", "Non-metal sheets", "Water piping" ],
+        "default_value" : "Metal sheets",
+        "label" : "category"
+      }
+    },
+    "material" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "Material"
+      }
+    },
+    "weight" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "Weight"
+      }
+    },
+    "coating" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "Coating"
+      }
+    },
+    "gauge" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "Gauge"
+      }
+    },
+    "roof_pitch" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "Roof pitch"
+      }
+    },
+    "batten_spacing" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "Batten spacing"
+      }
+    },
+    "section_length" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "Section length"
+      }
+    },
+    "covering_width" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "Covering width"
+      }
+    },
+    "product_images" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "image" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : { },
+              "thumbnails" : [ ],
+              "label" : "image"
+            }
+          }
+        },
+        "label" : "product images"
+      }
+    }
+  }
+}

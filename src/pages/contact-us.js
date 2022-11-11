@@ -11,7 +11,6 @@ const ContactUs = ({ data, location }) => {
   return (
     <Layout location={location} title="Master Roofing">
       <Seo title="Contact us" />
-      {console.log("contactUsData", contactUsData)}
       <section className="inner-page">
         <div className="section__inner">
           <div className="section-title-wrap text-container">

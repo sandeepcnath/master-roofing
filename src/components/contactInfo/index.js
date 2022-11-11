@@ -38,7 +38,6 @@ export default function ContactInfo({ customClass }) {
       `}
       render={data => (
         <address className={customClass ? `address ${customClass}` : "address"}>
-          {console.log("customClass", customClass)}
           <a
             className="iconButton"
             href={data.prismicHomepage.data.google_maps_link.url}

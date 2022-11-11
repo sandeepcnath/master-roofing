@@ -28,6 +28,8 @@ module.exports = {
           homepage: require("./custom_types/homepage.json"),
           contactinfo: require("./custom_types/contactInfo.json"),
           contact_info: require("./custom_types/dummy.json"),
+          products_page: require("./custom_types/products_page.json"),
+          products: require("./custom_types/products.json"),
         },
       },
     },

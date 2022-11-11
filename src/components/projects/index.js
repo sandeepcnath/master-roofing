@@ -6,11 +6,9 @@ const Projects = ({ data }) => {
   const [viewAll, setViewAll] = useState(false)
   const showAll = () => {
     setViewAll(!viewAll)
-    console.log("clicked", viewAll)
   }
 
   const homeData = data.prismicHomepage.data
-  console.log(homeData.body2[0].items)
   if (viewAll) {
     var projects = homeData.body2[0].items
   } else {
