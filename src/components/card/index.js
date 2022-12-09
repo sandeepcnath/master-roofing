@@ -29,7 +29,7 @@ const Card = data => {
         {cardData.project_image_1.fluid && (
           <SwiperSlide>
             <img
-              className="card__image"
+              className="card__image card__image_fill"
               src={cardData.project_image_1.fluid.src}
               alt=""
             />
@@ -38,7 +38,7 @@ const Card = data => {
         {cardData.project_image_2.fluid && (
           <SwiperSlide>
             <img
-              className="card__image"
+              className="card__image card__image_fill"
               src={cardData.project_image_2.fluid.src}
               alt=""
             />
@@ -47,7 +47,7 @@ const Card = data => {
         {cardData.project_image_3.fluid && (
           <SwiperSlide>
             <img
-              className="card__image"
+              className="card__image card__image_fill"
               src={cardData.project_image_3.fluid.src}
               alt=""
             />
@@ -56,7 +56,7 @@ const Card = data => {
         {cardData.project_image_4.fluid && (
           <SwiperSlide>
             <img
-              className="card__image"
+              className="card__image card__image_fill"
               src={cardData.project_image_4.fluid.src}
               alt=""
             />
@@ -65,7 +65,7 @@ const Card = data => {
         {cardData.project_image_5.fluid && (
           <SwiperSlide>
             <img
-              className="card__image"
+              className="card__image card__image_fill"
               src={cardData.project_image_5.fluid.src}
               alt=""
             />

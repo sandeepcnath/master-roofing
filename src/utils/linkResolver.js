@@ -1,5 +1,3 @@
-const { defaultLanguage } = require("../../prismic-configuration")
-
 /**
  * The Link Resolver used for the Prismic repository. This function converts a
  * Prismic document to a URL within your app. It is used throughout your app to
@@ -14,16 +12,11 @@ const { defaultLanguage } = require("../../prismic-configuration")
  * @type import('@prismicio/helpers').LinkResolverFunction
  */
 exports.linkResolver = doc => {
-  switch (doc.type) {
-    case "homepage": {
-      return doc.lang === defaultLanguage ? "/" : `/${doc.lang}`
-    }
-
-    case "products": {
-      return `/products/${doc.uid}`
-    }
-
-    default:
-      return "/"
+  // URL for a product type
+  if (doc.type === "products") {
+    return `/products/${doc.uid}`
   }
+
+  // Backup for all other types
+  return "/"
 }

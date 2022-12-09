@@ -8,6 +8,5 @@
 @media (min-width: 64rem) {
   .projects__list {
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-    gap: calc(4 * var(--flexible-base));
   }
 }

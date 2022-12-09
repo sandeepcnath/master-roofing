@@ -112,6 +112,7 @@ table thead tr th {
 a {
   color: var(--color-link);
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover,

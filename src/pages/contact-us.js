@@ -19,7 +19,7 @@ const ContactUs = ({ data, location }) => {
               {contactUsData.contactpage_subtext.text}
             </p>
           </div>
-          <div className="content-grid">
+          <div className="contact-grid">
             <ContactInfo />
             <PrimaryForm />
           </div>

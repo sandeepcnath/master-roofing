@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <Headroom>
-      <a href="#main" class="sr-only message-main-content">
+      <a href="#main" className="sr-only message-main-content">
         Skip to content
       </a>
       <nav className="nav">

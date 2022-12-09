@@ -2,14 +2,24 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import ContactInfo from "../components/contactInfo"
-import PrimaryForm from "../components/primary-form/primary-form"
-import "../styles/contact-us.css"
+import ProductCard from "../components/productCard"
+import "../styles/products.css"
 
 const ProductsPage = ({ data, location }) => {
   const productsPageData = data.prismicProductsPage.data
   const allPrismicProductsData = data.allPrismicProducts.nodes
   console.log("allPrismicProductsData", allPrismicProductsData)
+  const productTypes = ["Metal sheets", "Non-metal sheets", "Water piping"]
+  const metalSheets = allPrismicProductsData.filter(
+    product => product.data.category == productTypes[0]
+  )
+  const nonMetalSheets = allPrismicProductsData.filter(
+    product => product.data.category == productTypes[1]
+  )
+  const waterPiping = allPrismicProductsData.filter(
+    product => product.data.category == productTypes[2]
+  )
+
   return (
     <Layout location={location} title="Master Roofing">
       <Seo title="Products" />
@@ -21,10 +31,50 @@ const ProductsPage = ({ data, location }) => {
               {productsPageData.page_subtext.text}
             </p>
           </div>
-          <div className="content-grid">
-            <ContactInfo />
-            <PrimaryForm />
-          </div>
+          <section>
+            {metalSheets.length ? (
+              <div className="products-group">
+                <h2 className="h3 products-group__title">{productTypes[0]}</h2>
+                <ul className="grid2 products-list">
+                  {metalSheets.map(product => (
+                    <li className="grid2__li">
+                      <ProductCard data={product.data} url={product.url} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : (
+              <></>
+            )}
+            {nonMetalSheets.length ? (
+              <div className="products-group">
+                <h2 className="h3 products-group__title">{productTypes[1]}</h2>
+                <ul className="grid2 products-list">
+                  {nonMetalSheets.map(product => (
+                    <li className="grid2__li">
+                      <ProductCard data={product.data} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : (
+              <></>
+            )}
+            {waterPiping.length ? (
+              <div className="products-group">
+                <h2 className="h3 products-group__title">{productTypes[2]}</h2>
+                <ul className="grid2 products-list">
+                  {waterPiping.map(product => (
+                    <li className="grid2__li">
+                      <ProductCard data={product.data} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : (
+              ""
+            )}
+          </section>
         </div>
       </section>
     </Layout>
@@ -54,6 +104,11 @@ export const pageQuery = graphql`
           }
           subtext {
             text
+          }
+          product_images {
+            image {
+              url
+            }
           }
         }
         url
